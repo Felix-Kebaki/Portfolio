@@ -1,0 +1,3224 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(images/pexels-enginakyurt-1446948.jpg);
+    background-repeat: no-repeat;
+    background-position: 80%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+#INTROSec{
+    width: 100%;
+    height: 57rem;
+    position: relative;
+}
+
+.NavigationMain{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.NavigationMain .InsideNavDiv{
+    width: 97%;
+    margin: 0rem auto 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+/*start of logo part*/
+
+.LogoDiv{
+    margin-top: 1rem;
+}
+.LogoDiv img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem 1rem rgba(9, 11, 155, 0.075);
+    transition: 0.7s;
+}
+.LogoDiv img:hover{
+    scale: 1.1;
+}
+
+/*end of logo part*/
+
+
+
+/*start of sidenavigation*/
+
+
+.NavigationMain .InsideNavDiv .NavigationSide{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.CloseDiv{
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.CloseDiv img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.CloseDiv #CloseBtn{
+    font-size: 3rem;
+    padding: 0.2rem 1rem;
+    color: black;
+    font-family: "Jersey 10", sans-serif;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+
+.NavigationSide a{
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: orangered;
+    font-weight: 800;
+    font-family: "Jersey 10", sans-serif;
+    padding: 0rem 1.4rem 0rem 1rem;
+    margin: 0.2rem 0rem;
+    border-radius: 0.4rem;
+}
+
+
+.IconOnSubMenu{
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1.5rem;
+}
+.IconOnSubMenu p a{
+    color: black;
+    font-size: 1.7rem;
+}
+/*end of sidenavigation*/
+
+
+/*start of menu div*/
+
+.NavigationMain .InsideNavDiv .MenuDiv{
+    display: none;
+}
+.InsideNavDiv .MenuDiv #MenuBtn{
+    color: orangered;
+    font-size: 2.8rem;
+    font-family: "Jersey 10", sans-serif;
+    margin: 0.7rem 1rem 0rem 0rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+/*end of menu div*/
+
+
+/*start of social links*/
+
+.SocialsIconsHero{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 2rem;
+    z-index: 77;
+}
+.SocialsIconsHero p{
+    margin: 1rem 0rem 1rem 0rem;
+}
+.SocialsIconsHero p a{
+    text-decoration: none;
+    color: wheat ;
+    font-size: 1.8rem;
+    transition: 0.7s;
+    animation-name: iconRotate;
+    animation-delay: 0.7s;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+.SocialsIconsHero p a:hover{
+    color:orangered ;
+}
+
+
+/*end of social links*/
+
+
+
+
+
+
+
+
+/*START OF FLOATING BOXES AROUND*/
+
+
+
+/*start of how much i love doing developing websites*/ 
+.HowMuchLoveDiv{
+    position: absolute;
+    top: 7%;
+    right: 20rem;
+    border: 0.1rem wheat solid;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 0.4rem;
+}
+.HowMuchLoveDiv:hover{
+    border: none;
+    scale: 1.25;
+}
+.HowMuchLoveDiv:hover p{
+    color: orangered;
+    letter-spacing: 0.2rem;
+}
+.HowMuchLoveDiv p{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
+    color: wheat;
+    transition: 0.7s;
+}
+/*end of how much i love doing developing websites*/ 
+
+/*start of how much your users will love your websites*/ 
+.TheyWillLove{
+    position: absolute;
+    bottom: 4% ;
+    left: 4rem;
+    border: 0.1rem wheat solid;
+    transition: 0.7s;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.TheyWillLove p{
+    padding: 0.5rem 1rem;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.3rem;
+    color: wheat;
+    transition: 0.7s;
+}
+.TheyWillLove:hover{
+    border: none;
+    scale: 1.2;
+}
+.TheyWillLove:hover p{
+    color: orangered;
+    letter-spacing: 0.2rem;
+}
+
+/*end of how much your users will love your websites*/ 
+
+
+
+/*start of hobbies*/
+
+.HobbiesTop{
+    position: absolute;
+    bottom: 25%;
+    right: 10rem;
+    border: 0.1rem wheat solid;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+.HobbiesTop p{
+    padding: 0.2rem 0.6rem;
+    font-size: 1.1rem;
+    font-family: "Jersey 10", sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: wheat;
+}
+.HobbiesTop p::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "My Hobbies";
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: orangered;
+    transition: 0.7s;
+    font-style: italic;
+    opacity: 0;
+}
+
+.HobbiesTop p:hover::before{
+    opacity: 1;
+}
+
+/*END OF FLOATING BOXES AROUND*/
+
+
+
+
+
+
+
+/*START OF WORDS AT HEROSECTION */
+
+
+.HeroSecContent{
+    width: 100%;
+    position: absolute;
+    top: 29%;
+    height: auto;
+}
+.HeroSecContent .IntroNameDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HeroSecContent .IntroNameDiv #MyNameTop{
+    font-size: 8rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+#referenceToAm{
+    position: relative;
+}
+#MyNameTop #referenceToAm::before{
+    content: "AM";
+    border: 0.3rem orangered solid;
+    border-radius: 0.5rem;
+    color: orangered;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3rem;
+    padding: 0.2rem 1rem;
+    top: 2.5rem;
+    right: 6rem;
+    position: absolute;
+}
+
+#WhatDoTop{
+    font-size: 6rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+#bothTop{
+    font-size: 6rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+#WhatDoTopColor{
+    color: orangered;
+    font-size: 8rem;
+    font-family: "Jersey 10", sans-serif;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+}
+#PlaceTop{
+    color: white;
+    font-size: 6rem;
+    font-family: "Rubik", sans-serif;
+}
+
+
+/*END OF WORDS AT HEROSECTION */
+
+
+
+
+/*START ON PROJECTS*/
+
+
+#projectsSec{
+    background-color: black;
+    width: 100%;
+}
+.paddingProjects{
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+.IntroProWord{
+    width: 90%;
+    margin: 0rem auto 0rem;
+}
+#ProjectTittle{
+    letter-spacing: 0.1rem;
+    font-size: 6rem;
+    font-weight: 500;
+    color: orangered;
+    font-family: "Rubik", sans-serif;
+}
+#ProjectIntroMessage{
+    color: white;
+    font-size: 1.2rem;
+    max-width: 75%;
+    font-family: "Rubik", sans-serif;
+    margin-top: 0.6rem;
+}
+.ProjectWrapper{
+    width: 90%;
+    margin: 0rem auto 0rem;
+}
+
+.AllProjectSec{
+    width: 100%;
+    padding: 5rem 0rem 4rem 0rem;
+}
+
+.ActualProjectDiv{
+    display: flex;
+    width: 100%;
+    height: 16rem;
+    justify-content: space-between;
+}
+
+.ActualProjectDiv:hover .ProjectLinkDiv{
+    backdrop-filter: blur(0.3rem);
+    display: flex;
+}
+
+
+.AllProjectSec hr{
+    width: 100%;
+    margin: 2.5rem 0rem 2.5rem 0rem;
+    background-color: wheat;
+    height: 0.1rem;
+    border: none;
+    opacity: 0.6;
+}
+
+.ProjectPhotoDiv{
+    width: 35%;
+    height: 100%;
+    position: relative;
+}
+#ProjectPhoto{
+    width: 100%;
+    border-radius: 0.3rem;
+    height: 100%;
+}
+
+.ProjectLinkDiv{
+    display: none;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.ProjectLinkDiv a{
+    text-decoration: none;
+}
+
+.ProjectLinkDiv #link{
+    font-size: 2rem;
+    color: orangered;
+    background-color: wheat;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+}
+
+#Site{
+    font-size: 1.4rem;
+    color: orangered;
+    font-family: "Rubik", sans-serif;
+}
+
+.ProjectDetailsDiv{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ProjectDetailsDiv #NameOfProject{
+    color: white;
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
+}
+
+#DateOfProject{
+    font-size: 0.8rem;
+    position: relative;
+    color: rgb(245, 222, 179);
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 100;
+}
+
+#ProjectGenre{
+    font-weight: bolder;
+    color: rgba(245, 222, 179, 0.705);
+    font-family: "Rubik", sans-serif;
+}
+
+#DateOfProject::before{
+    content: "<d>";
+    position: absolute;
+    left: 0.2rem;
+    top: 10%;
+    color: orangered;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#DateOfProject::after{
+    content: "</d>";
+    position: absolute;
+    right: 0rem;
+    top: 10%;
+    color: orangered;
+    font-family: "Rubik", sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.TestimonialDiv{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.TestimonialDiv p{
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+}
+
+#OpenQuotes{
+    color: orangered;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    margin-top: -3rem;
+    margin-left: -3rem;
+}
+
+#CloseQuotes{
+    color: orangered;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -2rem;
+    margin-left: 1rem ;
+}
+
+/*END ON PROJECTS*/
+
+
+
+
+
+
+/*START OF ABOUT */
+
+
+
+#AboutMeStorySec{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.PaddingAbout2nd{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.DisplayAbout2ndWrapper{
+    width: 80%;
+    margin: 0rem auto 0rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.WordingAboutDiv{
+    width: 45%;
+}
+
+.WordingAboutDiv #KichwaAbout{
+    color: orangered;
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+#KichwaAbout::after{
+    content: "</h1>";
+    color: orangered;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Rubik", sans-serif;
+    bottom: 0;
+    left: 0;
+}
+
+
+#KichwaAbout::before{
+    content: "<h1>";
+    color: orangered;
+    opacity: 0.6;
+    position: absolute;
+    font-size: 1rem;
+    font-style: italic;
+    font-family: "Rubik", sans-serif;
+    top: 0;
+}
+
+#ContentAbout{
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.PichaAboutDiv{
+    width: 50%;
+    margin-top: 2rem;
+    position: relative;
+}
+.PichaAboutDiv #MainImageAbout{
+    width: 100%;
+    filter: brightness(0.4);
+}
+
+#Logo1{
+    width: 4rem;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+#Logo2{
+    width: 4rem;
+    position: absolute;
+    top: 6rem;
+    right: 38%;
+}
+#Logo3{
+    width: 4rem;
+    position: absolute;
+    top: 3.8rem;
+    right: 60%;
+}
+
+#Logo4{
+    width: 4rem;
+    position: absolute;
+    top: 12rem;
+    right: 30%;
+}
+
+#Logo5{
+    width: 3.5rem;
+    position: absolute;
+    top: 4rem;
+    right: 25%;
+}
+
+#Logo6{
+    width: 4.5rem;
+    position: absolute;
+    top: 10rem;
+    right: 50%;
+}
+#Logo7{
+    width: 4rem;
+    position: absolute;
+    top: 10rem;
+    right: 67%;
+}
+
+
+/*END OF ABOUT PART TWO NARRATION*/
+
+
+
+
+
+
+/*START OF PICHA AND MY MOTTO*/
+
+
+
+.PichaTu{
+    width: 100%;
+    height: 57rem;
+    position: relative;
+    background-color: black;
+}
+
+.PichaTu .ActualPic{
+    width: 85%;
+    margin: 0rem auto 0rem;
+}
+
+.PichaTu .ActualPic img{
+    height: 55rem;
+    width: 100%;
+}
+
+.ActualMottoDiv{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+.ActualMottoDiv p{
+    font-size: 4rem;
+    color: orangered ;
+    font-family: "Rubik", sans-serif;
+}
+
+.IntroToMotto{
+    position: absolute;
+    top: 10rem;
+    left: 3rem;
+    border-radius: 0.5rem;
+    border: 0.2rem orangered solid;
+    transition: 0.7s;
+}
+.IntroToMotto p{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: wheat;
+    transition: 0.7s;
+}
+.IntroToMotto p:hover{
+    color: white;
+    scale: 1.2;
+}
+.IntroToMotto:hover{
+    border: none;
+}
+
+/*END OF PICHA AND MY MOTTO*/
+
+
+
+
+
+
+
+
+/*START OF CONTACT*/
+
+
+
+
+#ContactMe{
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.PaddingContact{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.TittleContDiv{
+    margin-left: 5rem;
+}
+.TittleContDiv p{
+    color:orangered;
+    text-decoration: none;
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+}
+.DisplayContOptions{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0rem auto 0rem;
+}
+.SendMailDiv{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    position: relative;
+}
+
+.LikeBefore{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: wheat;
+    border-radius: 0.6rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    z-index: -9999;
+}
+.LikeBefore p{
+    color: orangered;
+    font-family: "Rubik", sans-serif;  
+    font-size: 6rem;
+    text-align: center;
+}
+.SendMailDiv div{
+    margin-top: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.SendMailDiv div input{
+    width: 47%;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+    background-color: rgb(34, 34, 34);
+    color: white ;
+    border: none;
+    font-family: "Rubik", sans-serif;
+}
+.SendMailDiv input{
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: rgb(34, 34, 34);
+    border-radius: 0.8rem;
+    font-size: 3rem;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+.MessageDiv{
+    margin-top: 2rem;
+    width: 100%;
+}
+#Message{
+    border: none;
+    background-color: rgb(34, 34, 34);
+    border-radius: 0.8rem;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    outline: none;
+    color: white ;
+    font-family: "Rubik", sans-serif;
+}
+#SendMessageBtn{
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    font-size: 4rem;
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+    border: none;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+    color:orangered ;
+    font-family: "Jersey 10", sans-serif;
+    transition: 0.7s;
+}
+#SendMessageBtn:hover{
+    background-color: wheat;
+    color: black;
+}
+.LinksToSocialsDiv{
+    width: 38%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(images/contactBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.LinksToSocialsDiv p:first-child{
+    margin-top: 5rem;
+}
+.LinksToSocialsDiv p{
+    margin-top: 2rem;
+}
+.LinksToSocialsDiv p a{
+    text-decoration: none;
+    font-size: 5rem;
+    color: wheat;
+    font-family: "Rubik", sans-serif;
+    transition: 0.7s;
+}
+.LinksToSocialsDiv p a:hover{
+    color:orangered;
+}
+
+.FloatingContact1{
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    border: 0.2rem orangered solid;
+    border-radius: 0.4rem;
+    transition: 0.7s;
+}
+.FloatingContact1 p{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.3rem;
+    color: wheat;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.FloatingContact1:hover {
+    border: none;
+}
+.FloatingContact1 p:hover{
+    scale: 1.25;
+    color: orangered;
+    letter-spacing: 0.1rem;
+}
+
+
+/*END OF CONTACT*/
+
+
+
+
+@media screen and (max-width:1680px){
+    /*START OF ABOUT */
+    .DisplayAbout2ndWrapper{
+        width: 88%;
+    }
+    .PichaAboutDiv{
+        width: 55%;
+    }
+    /*END OF ABOUT */
+}
+
+@media screen and (max-width:1665px){
+
+    /*START OF CONTACT*/
+
+    .TittleContDiv{
+        margin-left: 2rem;
+    }
+    .TittleContDiv p{
+        font-size: 4.7rem;
+    }
+    .DisplayContOptions{
+        width: 90%;
+    }
+    .SendMailDiv{
+        width: 60%;
+    }
+
+    .LinksToSocialsDiv{
+        width: 35%;
+    }
+    .LinksToSocialsDiv p:first-child{
+        margin-top: 9rem;
+    }
+    .LinksToSocialsDiv p{
+        margin-top: 1.8rem;
+    }
+    .LinksToSocialsDiv p a{
+        font-size: 4.7rem;
+    }
+    .FloatingContact1{
+        right: 1rem;
+    }
+    .FloatingContact1 p{
+        font-size: 1.2rem;
+    }
+    .FloatingContact1 p:hover{
+        scale: 1.01;
+    }
+
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:1634px){
+    /*START ON PROJECTS*/
+
+
+    #ProjectTittle{
+        font-size: 5.7rem;
+    }
+    .ProjectPhotoDiv{
+        width: 38%;
+    }
+    .ProjectDetailsDiv{
+        width: 28%;
+    }
+
+    .ProjectDetailsDiv #NameOfProject{
+        font-size: 1.6rem;
+    }
+
+    .TestimonialDiv p{
+        font-size: 1.1rem;
+    }
+
+
+/*END ON PROJECTS*/
+}
+
+@media screen and (max-width:1525px){
+    /*START OF ABOUT */
+
+    .WordingAboutDiv #KichwaAbout{
+        font-size: 3.7rem;
+    }
+    #ContentAbout{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    #Logo1{
+        right: 45%;
+    }
+    #Logo3{
+        top: 3.2rem;
+        right: 62%;
+    }
+    #Logo7{
+        top: 9rem;
+        right: 67%;
+    }
+    
+    /*END OF ABOUT */
+}
+
+@media screen and (max-width:1424px){
+    
+
+}
+
+@media screen and (max-width:1480px){
+
+    /*start of sidenavigation*/
+    
+    
+    .NavigationMain .InsideNavDiv .NavigationSide{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0rem;
+        margin-top: 0rem;
+        background-color: wheat;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100dvh;
+        transform: translateX(1500px);
+        transition: 1s;
+    }
+    
+    .CloseDiv{
+        display: flex;
+        padding: 2rem 2rem 3rem 2rem;
+    }
+    .CloseDiv img{
+        width: 6rem;
+    }
+    .CloseDiv #CloseBtn{
+        font-size: 3.5rem;
+    }
+    
+    .NavigationSide #NavsBtn{
+        font-size: 5rem;
+        letter-spacing: 0.5rem;
+        padding: 1rem 0rem 1rem 1rem;
+    }
+
+    .IconOnSubMenu{
+        display: flex;
+    }
+    .IconOnSubMenu p a{
+        font-size: 2.8rem;
+    }
+    /*end of sidenavigation*/
+    
+    
+    /*start of menu div*/
+    
+    .NavigationMain .InsideNavDiv .MenuDiv{
+        display: block;
+    }
+    .InsideNavDiv .MenuDiv #MenuBtn{
+        font-size: 3rem;
+        margin: 2rem 1.5rem 0rem 0rem;
+        letter-spacing: 0.3rem;
+    }
+    /*end of menu div*/
+    
+    
+    /*start of social links*/
+    
+    .SocialsIconsHero{
+        right: 1rem;
+        bottom: 0.3rem;
+    }
+    
+    
+    /*end of social links*/
+    
+    
+    /*START OF FLOATING BOXES AROUND*/
+    
+    
+    
+    /*start of how much i love doing developing websites*/ 
+    .HowMuchLoveDiv{
+        right: 16rem;
+    }
+    /*end of how much i love doing developing websites*/ 
+    
+    /*start of how much your users will love your websites*/ 
+    .TheyWillLove{
+        left: 2rem;
+    }
+    
+    /*end of how much your users will love your websites*/ 
+    
+    
+    
+    /*start of hobbies*/
+    
+    .HobbiesTop{
+        right: 7rem;
+    }
+    
+    /*END OF FLOATING BOXES AROUND*/
+    
+    /*START OF WORDS AT HEROSECTION */
+    
+    .HeroSecContent .IntroNameDiv{
+        width: 97%;
+        margin: 0rem auto 0rem;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 7.5rem;
+    }
+    #referenceToAm{
+        position: relative;
+    }
+    #MyNameTop #referenceToAm::before{
+        font-size: 2.3rem;
+        padding: 0.2rem 1rem;
+        top: 1.5rem;
+        right: 5rem;
+    }
+    
+    #WhatDoTop{
+        font-size: 5.5rem;
+    }
+    #bothTop{
+        font-size: 5.5rem;
+    }
+    #PlaceTop{
+        font-size: 5.5rem;
+    }
+    
+    
+    /*END OF WORDS AT HEROSECTION */
+
+
+    /*START ON PROJECTS*/
+    .IntroProWord{
+        width: 97%;
+    }
+
+    #ProjectTittle{
+        font-size: 5rem;
+    }
+    #ProjectIntroMessage{
+        font-size: 1.1rem;
+    }
+
+    .ProjectWrapper{
+        width: 97%;
+    }
+
+    .TestimonialDiv p{
+        font-size: 1rem;
+    }
+    #OpenQuotes{
+        font-size: 2.5rem;
+        margin-top: -2rem;
+    }
+    
+    #CloseQuotes{
+        font-size: 2.5rem;
+        margin-bottom: -1.6rem;
+    }
+    /*END ON PROJECTS*/
+
+    /*START OF ABOUT*/
+
+    .PichaAboutDiv{
+        width: 58%;
+    }
+
+    /*END OF ABOUT*/
+
+    /*START OF CONTACT*/
+
+    .FloatingContact1{
+        top: 3rem;
+        right: 1rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:1370px){
+
+      /*START OF ABOUT*/
+
+    .PichaAboutDiv{
+        margin-top: 3rem;
+    }
+    #Logo1{
+        width: 3.8rem;
+        margin-top: 0rem;
+        right: 30%;
+    }
+    #Logo2{
+        width: 3.8rem;
+        top: 5rem;
+        right: 40%;
+    }
+    #Logo3{
+        width: 3.8rem;
+        top: 2rem;
+        right: 55%;
+    }
+    
+    #Logo4{
+        width: 3.8rem;
+    }
+
+    #Logo5{
+        width: 3.5rem;
+        top: 7rem;
+        right: 22%;
+    }
+
+    #Logo6{
+        width: 3.8rem;
+        top: 11rem;
+        right: 48%;
+    }
+    #Logo7{
+        width: 3.8rem;
+        top: 8rem;
+        right: 64%;
+    }
+
+    /*END OF ABOUT*/
+}
+
+@media screen and (max-width:1347px){
+  /*START OF FLOATING BOXES AROUND*/
+    /*start of how much i love doing developing websites*/ 
+    .HowMuchLoveDiv{
+        top: 14%;
+        right: 15rem;
+    }
+    .HowMuchLoveDiv:hover{
+        scale: 1.20;
+    }
+    /*end of how much i love doing developing websites*/ 
+    
+    /*start of how much your users will love your websites*/ 
+    .TheyWillLove{
+        bottom: 2%;
+        left: 4rem;
+    }
+    
+    /*end of how much your users will love your websites*/ 
+    
+    
+    
+    /*start of hobbies*/
+    
+    .HobbiesTop{
+        right: 5rem;
+        bottom: 13%;
+    }
+    
+    /*END OF FLOATING BOXES AROUND*/
+    
+    /*START OF WORDS AT HEROSECTION */
+    
+
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 7rem;
+    }
+    
+    #MyNameTop #referenceToAm::before{
+        font-size: 2.4rem;
+        top: 1.4rem;
+        right: 4rem;
+    }
+    
+    #WhatDoTop{
+        font-size: 6rem;
+    }
+    #bothTop{
+        font-size: 5.5rem;
+    }
+    #WhatDoTopColor{
+        font-size: 6.5rem;
+        letter-spacing: 0.1rem;
+    }
+    #PlaceTop{
+        font-size: 5.5rem;
+    }
+    
+    
+    /*END OF WORDS AT HEROSECTION */
+
+
+    /*START OF CONTACT*/
+
+    .DisplayContOptions{
+        width: 97%;
+    }
+    .SendMailDiv{
+        width: 65%;
+    }
+    .LinksToSocialsDiv{
+        width: 33%;
+    }    
+
+     /*END OF CONTACT*/
+}
+
+@media screen and (max-width:1310px){
+
+    /*START OF ABOUT*/
+
+    .PichaAboutDiv{
+        margin-top: 4rem;
+    }
+    #Logo1{
+        width: 3.4rem;
+        right: 30%; 
+        top: 1rem;
+    }
+    #Logo2{
+        width: 3.4rem;
+        top: 5rem;
+        right: 42%;
+    }
+    #Logo3{
+        width: 3.4rem;
+    }
+    
+    #Logo4{
+        width: 3.4rem;
+        top: 11rem;
+        right: 32%;
+    }
+
+    #Logo5{
+        width: 3.3rem;
+    }
+
+    #Logo6{
+        width: 3.4rem;
+        top: 10rem;
+        right: 48%;
+    }
+    #Logo7{
+        width: 3.4rem;
+        top: 7rem;
+        right: 64%;
+    }
+
+    /*END OF ABOUT*/
+}
+
+@media screen and (max-width:1272px){
+
+
+    /*START OF PICHA AND MY MOTTO*/
+
+
+    .PichaTu .ActualPic{
+        width: 90%;
+    }
+
+
+    .ActualMottoDiv{
+        position: absolute;
+        top: 1rem;
+        left: 2rem;
+    }
+    .ActualMottoDiv p{
+        font-size: 3.5rem;
+    }
+
+    .IntroToMotto{
+        top: 8rem;
+        left: 1rem;
+    }
+    .IntroToMotto p{
+        font-size: 1.2rem;
+    }
+
+    /*END OF PICHA AND MY MOTTO*/
+
+    /*START OF CONTACT*/
+
+    .SendMailDiv{
+        width: 75%;
+    }    
+    .LinksToSocialsDiv{
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .LinksToSocialsDiv p a{
+        font-size: 3.5rem;
+    }
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:1206px){
+
+    /*START OF CONTACT*/
+    .TittleContDiv{
+        margin-left: 0rem;
+    }
+    .TittleContDiv{
+        margin-left: 0.7rem;
+    }
+    .DisplayContOptions{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .SendMailDiv{
+        width: 90%;
+    }
+    .LinksToSocialsDiv{
+        width: 100%;
+    }
+    .LinksToSocialsDiv p a{
+        font-size: 4.5rem;
+    }
+    .FloatingContact1{
+        top: 58rem;
+        right: 3rem;
+    }
+
+    /*END OF CONTACT*/
+}
+@media screen and (max-width:1192px){
+
+    /*start of menu div*/
+
+    .InsideNavDiv .MenuDiv #MenuBtn{
+        font-size: 3rem;
+        margin: 1.6rem 0.5rem 0rem 0rem;
+    }
+    /*end of menu div*/
+        /*START OF WORDS AT HEROSECTION */
+    
+        .HeroSecContent{
+            top: 33%;
+        }
+        .HeroSecContent .IntroNameDiv #MyNameTop{
+            font-size: 6rem;
+        }
+        
+        #MyNameTop #referenceToAm::before{
+            font-size: 2.2rem;
+            top: 1rem;
+            right: 3.6rem;
+        }
+        
+        #WhatDoTop{
+            font-size: 5.5rem;
+        }
+        #bothTop{
+            font-size: 4rem;
+        }
+        #WhatDoTopColor{
+            font-size: 6rem;
+            letter-spacing: 0.1rem;
+        }
+        #PlaceTop{
+            font-size: 4rem;
+        }
+        
+        
+        /*END OF WORDS AT HEROSECTION */
+    /*START ON PROJECTS*/
+
+    .AllProjectSec{
+        padding: 3rem 0rem 2rem 0rem;
+    }
+   
+    .ActualProjectDiv{
+        flex-direction: column;
+        height: auto;
+        width: 80%;
+        margin: 0rem auto 0rem;
+        row-gap: 2rem;
+    }
+
+    .ProjectPhotoDiv{
+        width: 100%;
+    }
+    .ProjectDetailsDiv{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .TestimonialDiv{
+        width: 90%;
+    }
+
+    /*END ON PROJECTS*/
+}
+
+@media screen and (max-width:1145px){
+
+    /*START OF ABOUT*/
+
+    .PichaAboutDiv{
+        margin-top: 5rem;
+    }
+    #Logo1{
+        width: 3.4rem;
+        right: 30%; 
+        top: 0rem;
+    }
+    #Logo2{
+        width: 3.4rem;
+        top: 4rem;
+        right: 42%;
+    }
+    #Logo3{
+        width: 3.4rem;
+        top: 1rem;
+    }
+    
+    #Logo4{
+        width: 3.4rem;
+        top: 10rem;
+        right: 32%;
+    }
+
+    #Logo5{
+        width: 3.3rem;
+        top: 5.4rem;
+    }
+
+    #Logo6{
+        width: 3.4rem;
+        top: 9rem;
+        right: 48%;
+    }
+    #Logo7{
+        width: 3.4rem;
+        top: 6rem;
+        right: 64%;
+    }
+
+    /*END OF ABOUT*/
+}
+
+@media screen and (max-width:1126px){
+    /*START ON PROJECTS*/
+
+    #ProjectIntroMessage{
+        max-width: 85%;
+    }
+
+    /*END ON PROJECTS*/
+}
+
+@media screen and (max-width:1102px){
+            /*START OF WORDS AT HEROSECTION */
+    
+            .HeroSecContent{
+                top: 35%;
+            }
+            .HeroSecContent .IntroNameDiv #MyNameTop{
+                font-size: 5.5rem;
+            }
+            
+            #MyNameTop #referenceToAm::before{
+                top: 1rem;
+                right: 3.5rem;
+                font-size: 2rem;
+            }
+            
+            #WhatDoTop{
+                font-size: 5.2rem;
+            }
+            #bothTop{
+                font-size: 4rem;
+            }
+            #WhatDoTopColor{
+                font-size: 5.5rem;
+                letter-spacing: 0.1rem;
+            }
+            #PlaceTop{
+                font-size: 4rem;
+            }
+            
+            
+            /*END OF WORDS AT HEROSECTION */
+}
+
+
+
+@media screen and (max-width:1060px){
+
+
+    /*START OF ABOUT*/
+
+    .DisplayAbout2ndWrapper{
+        width: 97%;
+    }
+    .PichaAboutDiv{
+        margin-top: 5.5rem;
+    }
+    #Logo1{
+        width: 3.1rem;
+        right: 30%; 
+        top: 0rem;
+    }
+    #Logo2{
+        width: 3.1rem;
+        top: 3.5rem;
+        right: 42%;
+    }
+    #Logo3{
+        width: 3.1rem;
+        top: 0.5rem;
+    }
+    
+    #Logo4{
+        width: 3.1rem;
+        top: 8.5rem;
+        right: 32%;
+    }
+
+    #Logo5{
+        width: 3rem;
+        top: 5rem;
+    }
+
+    #Logo6{
+        width: 3.1rem;
+        top: 8rem;
+        right: 50%;
+    }
+    #Logo7{
+        width: 3.1rem;
+        top: 5.5rem;
+        right: 64%;
+    }
+
+    /*END OF ABOUT*/
+    /*START OF PICHA AND MY MOTTO*/
+
+    .PichaTu .ActualPic{
+        width: 97%;
+        padding-top: 7rem;
+    }
+
+    .PichaTu .ActualPic img{
+        height: 55rem;
+        width: 100%;
+    }
+
+    .ActualMottoDiv{
+        top: 2rem;
+        left: 1rem;
+    }
+    .ActualMottoDiv p{
+        font-size: 3rem;
+    }
+
+    .IntroToMotto{
+        top: 9rem;
+        left: 1rem;
+    }
+
+    .IntroToMotto p:hover{
+        scale: 1.1;
+    }
+
+    /*END OF PICHA AND MY MOTTO*/
+}
+
+@media screen and (max-width:1024px){
+    /*START OF WORDS AT HEROSECTION */
+        
+    .HeroSecContent{
+        top: 35%;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 5.2rem;
+    }
+
+    #MyNameTop #referenceToAm::before{
+        top: 1rem;
+        right: 3.5rem;
+        font-size: 2rem;
+    }
+
+    #WhatDoTop{
+        font-size: 5rem;
+    }
+    #bothTop{
+        font-size: 3.7rem;
+    }
+    #WhatDoTopColor{
+        font-size: 5.1rem;
+        letter-spacing: 0.1rem;
+    }
+    #PlaceTop{
+        font-size: 3.7rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width:967px){
+
+    /*start of menu div*/
+
+    .InsideNavDiv .MenuDiv #MenuBtn{
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        margin: 1.3rem 0.4rem 0rem 0rem;
+    }
+
+    /*end of menu div*/    
+      /*START OF WORDS AT HEROSECTION */
+    
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 5rem;
+    }
+
+    #MyNameTop #referenceToAm::before{
+        top: 1rem;
+        right: 3.5rem;
+        font-size: 2rem;
+    }
+
+    #WhatDoTop{
+        font-size: 4.5rem;
+    }
+    #bothTop{
+        font-size: 3.3rem;
+    }
+    #WhatDoTopColor{
+        font-size: 4.7rem;
+        letter-spacing: 0.1rem;
+    }
+    #PlaceTop{
+        font-size: 3.3rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */
+
+    /*START OF CONTACT*/
+
+    .DisplayContOptions{
+        width: 100%;
+    }
+    .SendMailDiv{
+        width: 90%;
+    }
+    .FloatingContact1{
+        right: 1rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:903px){
+
+    /*START OF ABOUT*/
+
+    .PaddingAbout2nd{
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    .DisplayAbout2ndWrapper{
+        width: 85%;
+        flex-direction: column-reverse;
+    }
+    .WordingAboutDiv{
+        width: 90%;
+    }
+
+    .PichaAboutDiv{
+        width: 90%;
+        margin-top: 0rem;
+    }
+
+    #Logo1{
+        width: 3.6rem;
+        top: 0;
+        right: 37%;
+    }
+    #Logo2{
+        width: 3.6rem;
+        top: 6.5rem;
+        right: 38%;
+    }
+    #Logo3{
+        width: 3.6rem;
+        top: 3rem;
+        right: 57%;
+    }
+    
+    #Logo4{
+        width: 3.6rem;
+        top: 12rem;
+        right: 30%;
+    }
+    
+    #Logo5{
+        width: 3.4rem;
+        top: 6rem;
+        right: 22%;
+    }
+    
+    #Logo6{
+        width: 3.6rem;
+        top: 10rem;
+        right: 50%;
+    }
+    #Logo7{
+        width: 3.6rem;
+        top: 8.5rem;
+        right: 67%;
+    }
+
+    /*END OF ABOUT*/
+
+    /*START OF CONTACT*/
+
+    .SendMailDiv{
+        width: 97%;
+    }
+    .FloatingContact1{
+       top: 53rem;
+    }
+
+    /*END OF CONTACT*/
+}
+@media screen and (max-width:886px){
+
+    /*start of social links*/
+
+    .SocialsIconsHero{
+        display: none;
+    }
+
+    /*START OF FLOATING BOXES AROUND*/
+
+    /*start of how much i love doing developing websites*/ 
+    .HowMuchLoveDiv{
+        top: 6rem;
+        right: 1rem;
+    }
+    .HowMuchLoveDiv:hover{
+        border: none;
+        scale: 1.1;
+    }
+
+    /*end of how much i love doing developing websites*/ 
+
+    /*start of how much your users will love your websites*/ 
+    .TheyWillLove{
+        bottom: 2%;
+        left: 3rem;
+    }
+    .TheyWillLove p{
+        font-size: 1.4rem;
+    }
+    .TheyWillLove:hover{
+        scale: 1.13;
+    }
+
+
+    /*end of how much your users will love your websites*/ 
+
+
+
+    /*start of hobbies*/
+
+    .HobbiesTop{
+        bottom: 12%;
+        right: 0.6rem;
+    }
+    .HobbiesTop p{
+        font-size: 1rem;
+    }
+    .HobbiesTop p::before{
+        font-size: 1.5rem;
+    }
+
+
+    /*END OF FLOATING BOXES AROUND*/
+    /*START OF WORDS AT HEROSECTION */
+
+
+    .HeroSecContent{
+        top: 19%;
+        left: 0rem;
+    }
+    .HeroSecContent .IntroNameDiv{
+        flex-wrap: wrap;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 5.7rem;
+        text-align: center;
+        max-width: 85%;
+        margin: 0rem auto 0rem;
+    }
+    #referenceToAm{
+        font-size: 5.7rem;
+    }
+    #MyNameTop #referenceToAm::before{
+        font-size: 1.9rem;
+        top: 1.4rem;
+        right: 3.1rem;
+    }
+
+    #WhatDoTop{
+        font-size: 5.5rem;
+        text-align: center;
+        max-width: 80%;
+        margin: 0rem auto 0rem;
+
+    }
+    #bothTop{
+        font-size: 5.8rem;
+        text-align: center;
+    }
+    #WhatDoTopColor{
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+    }
+    #PlaceTop{
+        font-size: 5.2rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */
+
+       /*START ON PROJECTS*/
+    #ProjectTittle{
+        font-size: 4.5rem;
+    }
+    #ProjectIntroMessage{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .ActualProjectDiv{
+        width: 97%;
+    }
+    .TestimonialDiv p{
+        padding-top: 1rem;
+    }
+    #OpenQuotes{
+        margin-top: -1.5rem;
+        margin-left: 0rem;
+    }
+
+
+    /*END ON PROJECTS*/
+
+}
+
+
+@media screen and (max-width:811px){
+
+    /*START OF ABOUT*/
+
+    .PichaAboutDiv{
+        width: 100%;
+    }
+
+    /*END OF ABOUT*/
+
+}
+
+@media screen and (max-width:773px){
+
+    /*START OF PROJECT*/
+    
+    #ProjectTittle{
+        font-size: 4rem;
+    }
+    
+    
+    /*END ON PROJECTS*/
+}
+
+@media screen and (max-width:752px){
+  
+    /*START OF ABOUT*/
+    .DisplayAbout2ndWrapper{
+        width: 97%;
+    }
+    .WordingAboutDiv{
+      width: 100%;
+    }
+    .WordingAboutDiv #KichwaAbout{
+        font-size: 3.5rem;
+    }
+    #Logo1{
+        width: 3.2rem;
+        top: 1rem;
+        right: 37%;
+    }
+    #Logo2{
+        width: 3.2rem;
+        top: 7rem;
+        right: 39%;
+    }
+    #Logo3{
+        width: 3.2rem;
+        top: 3rem;
+        right: 54%;
+    }
+    
+    #Logo4{
+        width: 3.2rem;
+        top: 12rem;
+        right: 33%;
+    }
+    
+    #Logo5{
+        width: 3.2rem;
+        top: 6rem;
+        right: 23%;
+    }
+    
+    #Logo6{
+        width: 3.2rem;
+        top: 11rem;
+        right: 50%;
+    }
+    #Logo7{
+        width: 3.2rem;
+        top: 8.5rem;
+        right: 62%;
+    }
+
+    /*END OF ABOUT*/
+
+    /*START OF CONTACT*/
+
+    .LikeBefore p{
+        font-size: 5rem;
+    }
+    .SendMailDiv div:first-child{
+        margin-top: 1.3rem;
+    }
+    .SendMailDiv div input{
+        font-size: 2.5rem;
+        padding: 0.7rem 1rem;
+    }
+    .SendMailDiv input{
+        padding: 0.7rem 1rem;
+        font-size: 2.5rem;
+    }
+    #Message{
+        font-size: 2.5rem;
+        padding: 0.7rem 1rem;
+    }
+    #SendMessageBtn{
+        font-size: 3.4rem;
+    }
+
+    /*END OF CONTACT*/
+}
+@media screen and (max-width:744px){
+
+    /*START OF FLOATING BOXES AROUND*/
+
+     /*start of how much i love doing developing websites*/ 
+    .HowMuchLoveDiv p{
+        font-size: 0.9rem;
+    }
+    /*end of how much i love doing developing websites*/ 
+
+    /*start of how much your users will love your websites*/ 
+    .TheyWillLove{
+        bottom: 2%;
+        left: 0.4rem;
+    }
+    .TheyWillLove p{
+        font-size: 1rem;
+    }
+    .TheyWillLove:hover{
+        scale: 1.01;
+    }
+
+
+    /*end of how much your users will love your websites*/ 
+
+
+
+    /*start of hobbies*/
+    .HobbiesTop p{
+        font-size: 0.9rem;
+    }
+
+
+    /*END OF FLOATING BOXES AROUND*/
+   
+        /*START OF WORDS AT HEROSECTION */
+    
+    
+        .HeroSecContent{
+            top: 20%;
+        }
+        .HeroSecContent .IntroNameDiv #MyNameTop{
+            font-size: 5.3rem;
+            max-width: 90%;
+        }
+        #referenceToAm{
+            font-size: 5.2rem;
+        }
+        #MyNameTop #referenceToAm::before{
+            font-size: 1.9rem;
+            top: 0.9rem;
+        }
+    
+        #WhatDoTop{
+            font-size: 5.1rem;
+            max-width: 90%;
+    
+        }
+        #bothTop{
+            font-size: 5.3rem;
+        }
+        #WhatDoTopColor{
+            font-size: 5.6rem;
+        }
+        #PlaceTop{
+            font-size: 4.8rem;
+        }
+    
+    
+        /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width:654px){
+    /*START OF PROJECT*/
+    #ProjectTittle{
+        font-size: 3.5rem;
+    }
+    #ProjectIntroMessage{
+        font-size: 0.9rem;
+    }
+
+    /*END OF PROJECT*/
+}
+
+
+@media screen and (max-width:641px){
+
+/*START OF ABOUT*/
+
+    #Logo1{
+        width: 3rem;
+        top: 1rem;
+        right: 37%;
+    }
+    #Logo2{
+        width: 3rem;
+        top: 6rem;
+        right: 36%;
+    }
+    #Logo3{
+        width: 3rem;
+        top: 4rem;
+        right: 51%;
+    }
+
+    #Logo4{
+        width: 3rem;
+        top: 10.5rem;
+        right: 31%;
+    }
+
+    #Logo5{
+        width: 3rem;
+        top: 6rem;
+        right: 23%;
+    }
+
+    #Logo6{
+        width: 3rem;
+        top: 10rem;
+        right: 48%;
+    }
+    #Logo7{
+        width: 3rem;
+        top: 8rem;
+        right: 61%;
+    }
+
+/*END OF ABOUT*/
+}
+@media screen and (max-width:627px){
+
+    /*start of hobbies*/
+    .HobbiesTop{
+        bottom: 18%;
+    }
+        /*START OF WORDS AT HEROSECTION */
+    
+    
+        .HeroSecContent .IntroNameDiv #MyNameTop{
+            font-size: 5rem;
+            max-width: 90%;
+        }
+        #referenceToAm{
+            font-size: 5rem;
+        }
+        #MyNameTop #referenceToAm::before{
+            font-size: 1.9rem;
+            top: 0.9rem;
+        }
+    
+        #WhatDoTop{
+            font-size: 4.7rem;
+            max-width: 90%;
+    
+        }
+        #bothTop{
+            font-size: 4.8rem;
+        }
+        #WhatDoTopColor{
+            font-size: 5rem;
+        }
+        #PlaceTop{
+            font-size: 4.3rem;
+        }
+    
+    
+        /*END OF WORDS AT HEROSECTION */
+
+}
+
+
+@media screen and (max-width:596px){
+    /*START OF ABOUT*/
+
+    .WordingAboutDiv #KichwaAbout{
+        font-size: 3rem;
+    }
+    #KichwaAbout::after{
+        font-size: 0.9rem;
+    }
+    #KichwaAbout::before{
+        font-size: 0.9rem;
+    }
+    #ContentAbout{
+        font-size: 1rem;
+    }
+
+    #Logo1{
+        width: 3rem;
+        top: 0rem;
+        right: 37%;
+    }
+    #Logo2{
+        width: 3rem;
+        top: 5rem;
+        right: 39%;
+    }
+    #Logo3{
+        width: 3rem;
+        top: 2rem;
+        right: 54%;
+    }
+
+    #Logo4{
+        width: 3rem;
+        top: 9rem;
+        right: 31%;
+    }
+
+    #Logo5{
+        width: 3rem;
+        top: 4.5rem;
+        right: 24%;
+    }
+
+    #Logo6{
+        width: 3rem;
+        top: 8.5rem;
+        right: 48%;
+    }
+    #Logo7{
+        width: 3rem;
+        top: 6.5rem;
+        right: 61%;
+    }
+
+    /*END OF ABOUT*/
+}
+
+@media screen and (max-width:582px){
+
+    /*START OF WORDS AT HEROSECTION */
+
+
+    .HeroSecContent{
+        top: 30%;
+        left: 0rem;
+    }
+    .HeroSecContent .IntroNameDiv{
+        width: 97%;
+        margin: 0rem auto 0rem;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 4rem;
+        max-width: 87%;
+    }
+
+    #MyNameTop #referenceToAm{
+        font-size: 4rem;
+    }
+    #MyNameTop #referenceToAm::before{
+        border: 0.2rem orangered solid;
+        border-radius: 0.3rem;
+        font-size: 1.23rem;
+        padding: 0.1rem 0.5rem;
+        top: 0.7rem;
+        right: 2.4rem;
+    }
+
+    #WhatDoTop{
+        font-size: 3rem;
+    }
+    #bothTop{
+        font-size: 3rem;
+    }
+    #WhatDoTopColor{
+        font-size: 4rem;
+    }
+    #PlaceTop{
+        font-size: 3rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */   
+
+    /*START OF CONTACT*/
+
+    .LikeBefore p{
+        font-size: 4rem;
+    }
+
+    .LinksToSocialsDiv p:first-child{
+        margin-top: 12rem;
+    }
+    .FloatingContact1{
+        top: 50rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:577px){
+    
+    #INTROSec{
+        height: 100dvh;
+    }
+
+        /*start of menu div*/
+
+        .InsideNavDiv .MenuDiv #MenuBtn{
+            font-size: 2.7rem;
+            letter-spacing: 0.1rem;
+            margin: 1.3rem 0.4rem 0rem 0rem;
+        }
+    
+        /*end of menu div*/
+
+
+    /*START OF PROJECT*/
+
+        #ProjectTittle{
+            font-size: 3rem;
+        }
+        .ProjectDetailsDiv{
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+    /*END OF PROJECT*/
+
+    /*START OF CONTACT*/
+    
+    .TittleContDiv p{
+        font-size: 4rem;
+    }
+    .SendMailDiv input{
+        padding: 1rem 1rem;
+    }
+    #Message{
+        padding: 1rem 1rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+
+@media screen and (max-width:566px){
+
+    /*START OF CONTACT*/
+
+    .SendMailDiv div input{
+        font-size: 1.8rem;
+    }
+    .SendMailDiv input{
+        font-size: 1.8rem;
+    }
+    #Message{
+        font-size: 1.8rem;
+    }
+    #SendMessageBtn{
+        font-size: 3rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:557px){
+    /*START OF CONTACT*/
+
+    .FloatingContact1{
+        top: 40rem;
+        right: 1rem;
+    }
+    /*END OF CONTACT*/
+}
+
+
+
+
+@media screen and (max-width:530px){
+
+    /*START OF ABOUT*/
+
+    
+    #Logo1{
+        width: 3rem;
+        margin-top: -1.2rem;
+        right: 32%;
+    }
+    #Logo2{
+        width: 3rem;
+        top: 3.6rem;
+        right: 39%;
+    }
+    #Logo3{
+        width: 3rem;
+        top: 1rem;
+        right: 56%;
+    }
+
+    #Logo4{
+        width: 3rem;
+        top: 7.5rem;
+        right: 31%;
+    }
+
+    #Logo5{
+        width: 3rem;
+        top: 4.5rem;
+        right: 20%;
+    }
+
+    #Logo6{
+        width: 3rem;
+        top: 6.5rem;
+        right: 50%;
+    }
+    #Logo7{
+        width: 3rem;
+        top: 5.5rem;
+        right: 69%;
+    }
+
+    /*END OF ABOUT*/
+}
+
+
+@media screen and (max-width:516px){
+
+    /*START OF MENU THAT APPEARS*/
+
+    /*start of sidenavigation*/
+
+
+    .NavigationMain .InsideNavDiv .NavigationSide{
+        margin-right: 0rem;
+        margin-top: 0rem;
+    }
+
+    .CloseDiv{
+        padding: 1rem 2rem;
+    }
+    .CloseDiv img{
+        width: 4.3rem;
+    }
+
+    .NavigationSide #NavsBtn{
+        font-size: 4rem;
+        padding: 0.8rem 1.4rem 0.4rem 0.9rem;
+        margin: 1rem 0rem 0.2rem 0rem;
+    }
+
+
+    .IconOnSubMenu{
+        bottom: 1%;
+    }
+    .IconOnSubMenu p a{
+        font-size: 1.7rem;
+    }
+    /*end of sidenavigation*/
+
+    /*END OF MENU THAT APPEARS*/
+}
+
+@media screen and (max-width:500px){
+
+    /*START OF PROJECT*/
+
+    #ProjectTittle{
+        letter-spacing: 0rem;
+        font-size: 2.5rem;
+    }
+    #ProjectIntroMessage{
+        font-size: 0.8rem;
+    }
+    .AllProjectSec{
+        padding: 2rem 0rem 3rem 0rem;
+    }
+    .TestimonialDiv{
+        width: 95%;
+    }
+    #CloseQuotes{
+        margin-bottom: -2rem;
+        margin-left: 0rem ;
+    }
+
+    /*END OF PROJECT*/
+}
+@media screen and (max-width:480px){
+   
+
+    #INTROSec{
+        height: 100dvh;
+    }
+
+    .NavigationMain{
+        height: auto;
+    }
+
+    .NavigationMain .InsideNavDiv{
+        width: 97%;
+        justify-content: space-between;
+    }
+    /*start of logo part*/
+
+    .LogoDiv{
+        margin-top: 0.6rem;
+    }
+    .LogoDiv img{
+        width: 3.2rem;
+        border-radius: 50%;
+        padding: 0.3rem 0rem 0.3rem 0rem;
+    }
+
+
+    /*end of logo part*/
+
+
+
+    /*start of sidenavigation*/
+
+
+    .NavigationMain .InsideNavDiv .NavigationSide{
+        margin-right: 0rem;
+        margin-top: 0rem;
+        position: absolute;
+        top: 0rem;
+        background-color: wheat;
+        width: 100%;
+        height: 100dvh;
+        display: flex;
+        transition: 0.7s;
+        transform: translateX(30rem);
+    }
+
+    .CloseDiv{
+        display: flex;
+    }
+
+    .IconOnSubMenu{
+        display: flex;
+    }
+    .NavigationSide a{
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        padding: 1rem 1.4rem 0rem 1rem;
+        margin: 0.2rem 0rem;
+    }
+
+    /*end of sidenavigation*/
+
+
+    /*start of menu div*/
+
+    .InsideNavDiv .MenuDiv #MenuBtn{
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+        margin: 1rem 0.4rem 0rem 0rem;
+    }
+
+    /*end of menu div*/
+
+
+    /*start of social links*/
+
+    .SocialsIconsHero{
+        bottom: 1rem;
+        right: 0.4rem;
+    }
+    .SocialsIconsHero p{
+        margin: 0.6rem 0rem 0rem 0rem;
+    }
+    .SocialsIconsHero p a{
+        font-size: 1.4rem;
+    }
+
+
+    /*START OF WORDS AT HEROSECTION */
+
+
+    .HeroSecContent{
+        top: 27%;
+        left: 0rem;
+    }
+    .HeroSecContent .IntroNameDiv{
+        width: 97%;
+        margin: 0rem auto 0rem;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #MyNameTop #referenceToAm::before{
+        border: 0.2rem orangered solid;
+        border-radius: 0.3rem;
+        font-size: 1.23rem;
+        padding: 0.1rem 0.5rem;
+        top: 0.7rem;
+        right: 2.4rem;
+    }
+
+    #WhatDoTop{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #bothTop{
+        font-size: 3rem;
+        text-align: center;
+    }
+    #WhatDoTopColor{
+        text-align: center;
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+    }
+    #PlaceTop{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */
+
+    /*START OF FLOATING BOXES AROUND*/
+
+
+
+    /*start of how much i love doing developing websites*/ 
+    .HowMuchLoveDiv{
+        top: 8%;
+        right: 0.2rem;
+    }
+    .HowMuchLoveDiv:hover{
+        scale: 1.02;
+    }
+    .HowMuchLoveDiv:hover p{
+        letter-spacing: 0.1rem;
+    }
+    .HowMuchLoveDiv p{
+        font-size: 0.9rem;
+        padding: 0.1rem 0.4rem;
+    }
+    /*end of how much i love doing developing websites*/ 
+
+    /*start of how much your users will love your websites*/ 
+    .TheyWillLove{
+        bottom: 3% ;
+        left: 0.4rem;
+    }
+    .TheyWillLove p{
+        padding: 0.2rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .TheyWillLove:hover{
+        scale: 1.02;
+    }
+    .TheyWillLove:hover p{
+        letter-spacing: 0.1rem;
+    }
+
+    /*end of how much your users will love your websites*/ 
+
+
+
+    /*start of hobbies*/
+
+    .HobbiesTop{
+        bottom: 22%;
+        right: 0.4rem;
+        border-radius: 0.4rem;
+    }
+    .HobbiesTop p{
+        padding: 0.1rem 0.4rem;
+        font-size: 0.8rem;
+    }
+    /*END OF FLOATING BOXES AROUND*/
+
+    /*START OF PICHA AND MY MOTTO*/
+
+    .PichaTu{
+    height: auto;
+    }
+    .paddingPichaMotto{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .PichaTu .ActualPic{
+        width: 97%;
+    }
+
+    .PichaTu .ActualPic img{
+        height: 55rem;
+    }
+
+    .ActualMottoDiv{
+        top: 1.5rem;
+        left: 0.2rem;
+    }
+    .ActualMottoDiv p{
+        font-size: 3rem;
+    }
+
+    .IntroToMotto{
+        top: 7rem;
+        left: 0.2rem;
+    }
+    .IntroToMotto p{
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+    }
+    .IntroToMotto p:hover{
+        letter-spacing: 0.1rem;
+        scale: 1.02;
+    }
+
+    /*END OF PICHA AND MY MOTTO*/
+
+     /*START OF CONTACT*/
+
+     .PaddingContact{
+        padding-top: 0rem;
+        padding-bottom: 3rem;
+    }
+    .TittleContDiv{
+        margin-bottom: 2rem;
+    }
+    .TittleContDiv p{
+        font-size: 3rem;
+    }
+    .DisplayContOptions{
+        flex-direction: column;
+        justify-content: start;
+        width: 97%;
+        margin: 0rem auto 0rem;
+    }
+    .SendMailDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .LikeBefore p{
+        font-size: 3rem;
+    }
+    .SendMailDiv div{
+        margin-top: 0rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .SendMailDiv div input{
+        width: 47%;
+        font-size: 1.7rem;
+        padding: 1rem 0.5rem;
+    }
+    .SendMailDiv input{
+        font-size: 1.7rem;
+    }
+
+    #Message{
+        font-size: 1.7rem;
+    }
+    #SendMessageBtn{
+        font-size: 3rem;
+    }
+
+    .LinksToSocialsDiv{
+        padding-top: 5rem;
+    }
+    .LinksToSocialsDiv p:first-child{
+        margin-top: 8rem;
+    }
+
+    .LinksToSocialsDiv p a{
+        font-size: 3rem;
+    }
+    .FloatingContact1{
+        top: 42rem;
+        right: 0.1rem;
+    }
+    .FloatingContact1 p{
+        padding: 0.3rem 0.6rem 0.2rem 0.6rem;
+        font-size: 1rem;
+    }
+
+    .FloatingContact1 p:hover{
+        scale: 1.02;
+        letter-spacing: 0.1rem;
+    }
+
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:460px){
+
+    /*START OF ABOUT*/
+
+    #Logo1{
+        margin-top: -2rem;
+    }
+    #Logo2{
+        top: 3rem;
+    }
+    #Logo3{
+        top: 0rem;
+    }
+
+    #Logo4{
+        top: 6.5rem;
+    }
+
+    #Logo5{
+        top: 3.5rem;
+    }
+
+    #Logo6{
+        top: 5.5rem;
+    }
+    #Logo7{
+        top: 4.5rem;
+    }
+
+    /*END OF ABOUT*/
+}
+
+@media screen and (max-width:439px){
+        /*START OF WORDS AT HEROSECTION */
+
+
+        .HeroSecContent{
+            top: 28%;
+            left: 0rem;
+        }
+        .HeroSecContent .IntroNameDiv{
+            width: 97%;
+            margin: 0rem auto 0rem;
+        }
+        .HeroSecContent .IntroNameDiv #MyNameTop{
+            font-size: 3.5rem;
+        }
+    
+        #MyNameTop #referenceToAm{
+            font-size: 3.5rem;
+        }
+        #MyNameTop #referenceToAm::before{
+            border: 0.2rem orangered solid;
+            border-radius: 0.3rem;
+            font-size: 1.23rem;
+            padding: 0.1rem 0.5rem;
+            top: 0.7rem;
+            right: 2.4rem;
+        }
+    
+        #WhatDoTop{
+            font-size: 2.9rem;
+        }
+        #bothTop{
+            font-size: 2.5rem;
+        }
+        #WhatDoTopColor{
+            font-size: 3.5rem;
+        }
+        #PlaceTop{
+            font-size: 2.5rem;
+        }
+    
+    
+        /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width:412px){
+
+    /*START OF MENU THAT APPEARS*/
+
+    /*start of sidenavigation*/
+
+
+    .CloseDiv{
+        padding: 1rem 0.4rem;
+    }
+    .CloseDiv img{
+        width: 4rem;
+    }
+
+    .NavigationSide #NavsBtn{
+        padding: 0.6rem 1.4rem 0.4rem 0.9rem;
+        margin: 0.4rem 0rem 0.2rem 0rem;
+    }
+
+    .IconOnSubMenu p a{
+        font-size: 1.9rem;
+    }
+    /*end of sidenavigation*/
+
+    /*END OF MENU THAT APPEARS*/
+
+
+    /*START OF ABOUT*/
+
+    #Logo1{
+        width: 2.6rem;
+        margin-top: -2.6rem;
+    }
+    #Logo2{
+        width: 2.6rem;
+        top: 2rem;
+    }
+    #Logo3{
+        width: 2.6rem;
+        margin-top: -1rem;
+    }
+
+    #Logo4{
+        width: 2.6rem;
+        top: 5.5rem;
+    }
+
+    #Logo5{
+        width: 2.6rem;
+        top: 2.5rem;
+    }
+
+    #Logo6{
+        width: 2.6rem;
+        top: 4.5rem;
+    }
+    #Logo7{
+        width: 2.6rem;
+        top: 3.5rem;
+    }
+
+    /*END OF ABOUT*/
+
+
+    /*START OF CONTACT*/
+    .TittleContDiv{
+        margin-left: 0.4rem;
+    }
+    .TittleContDiv p{
+        font-size: 2.6rem;
+    }
+
+    .LikeBefore p{
+        font-size: 2.4rem;
+    }
+    .SendMailDiv div:first-child{
+        margin-top: 0rem;
+    }
+    .SendMailDiv div input{
+        font-size: 1.3rem;
+    }
+    .SendMailDiv input{
+        font-size: 1.3rem;
+        padding: 1rem 1rem;
+        margin-top: 1.4rem;
+    }
+    #Message{
+        font-size: 1.3rem;
+        margin-top: 1.4rem;
+        padding: 1rem 1rem;
+    }
+    .FloatingContact1{
+        top: 36rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:398px){
+
+    #ProjectTittle{
+        font-size: 2rem;
+    }
+    /*END OF PROJECT*/
+}
+
+@media screen and (max-width:379px){
+
+      /*END OF FLOATING BOXES AROUND*/
+        /*start of hobbies*/
+
+        .HobbiesTop{
+            bottom: 16%;
+        }
+        /*END OF FLOATING BOXES AROUND*/
+    /*START OF WORDS AT HEROSECTION */
+
+
+    .HeroSecContent{
+        top: 24%;
+        left: 0rem;
+    }
+    .HeroSecContent .IntroNameDiv{
+        width: 97%;
+        margin: 0rem auto 0rem;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 3.3rem;
+    }
+
+    #MyNameTop #referenceToAm{
+        font-size: 3.3rem;
+    }
+    #MyNameTop #referenceToAm::before{
+        border: 0.2rem orangered solid;
+        border-radius: 0.3rem;
+        font-size: 1.23rem;
+        padding: 0.1rem 0.5rem;
+        top: 0.7rem;
+        right: 2.4rem;
+    }
+
+    #WhatDoTop{
+        font-size: 2.5rem;
+    }
+    #bothTop{
+        font-size: 2.5rem;
+    }
+    #WhatDoTopColor{
+        font-size: 3.5rem;
+    }
+    #PlaceTop{
+        font-size: 2.5rem;
+    }
+
+
+    /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width:366px){
+
+    .IconOnSubMenu{
+        justify-content: start;
+        column-gap: 0rem;
+    }
+    .IconOnSubMenu p{
+        width: 12%;
+    }
+    .IconOnSubMenu p a{
+        font-size: 1.7rem;
+    }
+    /*end of sidenavigation*/
+
+    .HeroSecContent{
+        top: 26%;
+        left: 0rem;
+    }
+    .HeroSecContent .IntroNameDiv #MyNameTop{
+        font-size: 2.6rem;
+    }
+    #MyNameTop #referenceToAm{
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width:361px){
+
+    /*START OF ABOUT*/
+
+    #Logo1{
+        width: 2.3rem;
+        margin-top: -2.6rem;
+    }
+    #Logo2{
+        width: 2.3rem;
+        top: 1rem;
+        right: 41% ;
+    }
+    #Logo3{
+        width: 2.3rem;
+        margin-top: -1rem;
+        right: 58%;
+    }
+
+    #Logo4{
+        width: 2.3rem;
+        top: 4.5rem;
+    }
+
+    #Logo5{
+        width: 2.3rem;
+        top: 1.5rem;
+    }
+
+    #Logo6{
+        width: 2.3rem;
+        top: 3.5rem;
+    }
+    #Logo7{
+        width: 2.3rem;
+        top: 2.5rem;
+    }
+
+    /*END OF ABOUT*/    
+}
+
+@media screen and (max-width:349px){
+
+    /*START OF CONTACT*/    
+    .TittleContDiv p{
+        font-size: 2.5rem;
+    }
+    .LikeBefore p{
+        font-size: 1.8rem;
+    }
+    .FloatingContact1{
+        top: 37rem;
+    }
+
+    /*END OF CONTACT*/
+}
+
+@media screen and (max-width:324px){
+
+    /*START OF ABOUT*/
+
+    #Logo1{
+        width: 2rem;
+        margin-top: -2.6rem;
+    }
+    #Logo2{
+        width: 2rem;
+        top: 1rem;
+        right: 41% ;
+    }
+    #Logo3{
+        width: 2rem;
+        margin-top: -1rem;
+        right: 58%;
+    }
+
+    #Logo4{
+        width: 2rem;
+        top: 4.5rem;
+    }
+
+    #Logo5{
+        width: 2rem;
+        top: 1.5rem;
+    }
+
+    #Logo6{
+        width: 2rem;
+        top: 3.5rem;
+    }
+    #Logo7{
+        width: 2rem;
+        top: 2.5rem;
+    }
+
+    /*END OF ABOUT*/    
+}
