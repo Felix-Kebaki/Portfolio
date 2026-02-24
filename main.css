@@ -348,6 +348,28 @@ body{
 
 
 
+/*START OF MY SKILLS*/
+
+.MySkillsMainSec{
+    width:100%;
+    padding:4.5rem 0rem;
+    background-color: rgb(44, 44, 44);
+}
+
+.MySkillsMainSec div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    column-gap:1.5rem;
+}
+
+.MySkillsMainSec div img{
+    width:4.5rem;
+}
+
+
+
+
 /*START ON PROJECTS*/
 
 
@@ -366,7 +388,7 @@ body{
 }
 #ProjectTittle{
     letter-spacing: 0.1rem;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 500;
     color: orangered;
     font-family: "Rubik", sans-serif;
