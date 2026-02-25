@@ -333,7 +333,7 @@ body {
   align-items: center;
   column-gap: 1.5rem;
   background-color: rgb(34, 34, 34);
-  padding:4rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .MySkillOnlyDiv img {
@@ -405,7 +405,6 @@ body {
 }
 
 /*END ON PROJECTS*/
-
 
 /*START OF CONTACT*/
 
@@ -536,7 +535,7 @@ body {
 }
 .FloatingContact1 p:hover {
   scale: 1.25;
-  max-width:19rem;
+  max-width: 19rem;
   letter-spacing: 0.1rem;
 }
 
@@ -671,9 +670,8 @@ body {
       font-size: 1.7rem;
     }
     .AboutMeText {
-      font-size: 1rem;
       max-width: 100%;
-      margin-top: 1rem;
+      margin-top: 0.4rem;
     }
   }
   /*END OF ABOUT*/
@@ -789,7 +787,7 @@ body {
   /*start of menu div*/
 
   .InsideNavDiv .MenuDiv #MenuBtn {
-    font-size:2.5rem;
+    font-size: 2.5rem;
     margin: 1.6rem 0rem 0rem 0rem;
   }
   /*end of menu div*/
@@ -862,7 +860,7 @@ body {
     column-gap: 1rem;
     flex-wrap: wrap;
     row-gap: 0.5rem;
-      padding:3rem 0rem;
+    padding: 3rem 0rem;
   }
 
   .MySkillOnlyDiv img {
@@ -908,7 +906,7 @@ body {
 
   /*END OF WORDS AT HEROSECTION */
 
-      /*START OF CONTACT*/
+  /*START OF CONTACT*/
   .PaddingContact {
     padding-bottom: 3rem;
   }
@@ -924,13 +922,13 @@ body {
     cursor: default;
   }
   .FloatingContact1:hover {
-  border: none;
-}
-.FloatingContact1 p:hover {
-  scale: 1;
-  max-width:40rem;
-  letter-spacing: 0rem;
-}
+    border: none;
+  }
+  .FloatingContact1 p:hover {
+    scale: 1;
+    max-width: 40rem;
+    letter-spacing: 0rem;
+  }
   /*END OF CONTACT*/
 }
 
@@ -984,7 +982,6 @@ body {
 
   /*END OF PROJECT*/
 }
-
 
 @media screen and (max-width: 886px) {
   /*start of social links*/
@@ -1145,10 +1142,9 @@ body {
 }
 
 @media screen and (max-width: 680px) {
-.SendMailDiv {
-  width: 100%;
-}
-
+  .SendMailDiv {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 627px) {
@@ -1254,18 +1250,24 @@ body {
 
   /*end of menu div*/
 
+  /*START OF ABOUT*/
+  .AboutMeText {
+    font-size: 0.9rem;
+  }
+  /*END OF ABOUT*/
+
   /*START OF PROJECT*/
   .ProjectWrapper div img {
-  height: 22rem;
-}
-/*END OF PROJECT*/
+    height: 19rem;
+  }
+  /*END OF PROJECT*/
 }
 
 @media screen and (max-width: 556px) {
-    .FloatingContact1 p {
-  padding: 0.5rem;
-  font-size: 0.9rem;
-}
+  .FloatingContact1 p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 516px) {
@@ -1303,10 +1305,9 @@ body {
 }
 
 @media screen and (max-width: 502px) {
-    
-.PaddingContact {
-  padding-bottom: 3.7rem;
-}
+  .PaddingContact {
+    padding-bottom: 3.7rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
