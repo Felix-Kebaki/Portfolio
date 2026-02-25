@@ -82,7 +82,7 @@ function sendMail() {
         };
 
         // Send email
-        emailjs.send("service_vfzczjf", "template_gesy2yu", params)
+        emailjs.send("service_70rsc46", "template_gesy2yu", params)
             .then(function (response) {
 
                 console.log("SUCCESS!", response);
