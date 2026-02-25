@@ -350,20 +350,20 @@ body{
 
 /*START OF MY SKILLS*/
 
-.MySkillsMainSec{
+#MySkillsAndAboutMainSec{
     width:100%;
     padding:4.5rem 0rem;
-    background-color: rgb(44, 44, 44);
+    background-color: black;
 }
 
-.MySkillsMainSec div{
+.MySkillOnlyDiv{
     display: flex;
     justify-content: center;
     align-items:center;
     column-gap:1.5rem;
 }
 
-.MySkillsMainSec div img{
+.MySkillOnlyDiv img{
     width:4.5rem;
 }
 
@@ -566,200 +566,6 @@ body{
 
 
 
-/*START OF ABOUT */
-
-
-
-#AboutMeStorySec{
-    width: 100%;
-    height: auto;
-    background-color: black;
-}
-
-.PaddingAbout2nd{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.DisplayAbout2ndWrapper{
-    width: 80%;
-    margin: 0rem auto 0rem;
-    padding-top: 2rem;
-    display: flex;
-    justify-content: center;
-}
-.WordingAboutDiv{
-    width: 45%;
-}
-
-.WordingAboutDiv #KichwaAbout{
-    color: orangered;
-    font-weight: 500;
-    font-size: 4rem;
-    font-family: "Rubik", sans-serif;
-    position: relative;
-    padding: 1.5rem 0rem 1.5rem 0rem;
-}
-
-#KichwaAbout::after{
-    content: "</h1>";
-    color: orangered;
-    opacity: 0.6;
-    position: absolute;
-    font-size: 1rem;
-    font-style: italic;
-    font-family: "Rubik", sans-serif;
-    bottom: 0;
-    left: 0;
-}
-
-
-#KichwaAbout::before{
-    content: "<h1>";
-    color: orangered;
-    opacity: 0.6;
-    position: absolute;
-    font-size: 1rem;
-    font-style: italic;
-    font-family: "Rubik", sans-serif;
-    top: 0;
-}
-
-#ContentAbout{
-    color: white;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    font-family: "Rubik", sans-serif;
-}
-
-.PichaAboutDiv{
-    width: 50%;
-    margin-top: 2rem;
-    position: relative;
-}
-.PichaAboutDiv #MainImageAbout{
-    width: 100%;
-    filter: brightness(0.4);
-}
-
-#Logo1{
-    width: 4rem;
-    position: absolute;
-    top: 0;
-    right: 50%;
-}
-#Logo2{
-    width: 4rem;
-    position: absolute;
-    top: 6rem;
-    right: 38%;
-}
-#Logo3{
-    width: 4rem;
-    position: absolute;
-    top: 3.8rem;
-    right: 60%;
-}
-
-#Logo4{
-    width: 4rem;
-    position: absolute;
-    top: 12rem;
-    right: 30%;
-}
-
-#Logo5{
-    width: 3.5rem;
-    position: absolute;
-    top: 4rem;
-    right: 25%;
-}
-
-#Logo6{
-    width: 4.5rem;
-    position: absolute;
-    top: 10rem;
-    right: 50%;
-}
-#Logo7{
-    width: 4rem;
-    position: absolute;
-    top: 10rem;
-    right: 67%;
-}
-
-
-/*END OF ABOUT PART TWO NARRATION*/
-
-
-
-
-
-
-/*START OF PICHA AND MY MOTTO*/
-
-
-
-.PichaTu{
-    width: 100%;
-    height: 57rem;
-    position: relative;
-    background-color: black;
-}
-
-.PichaTu .ActualPic{
-    width: 85%;
-    margin: 0rem auto 0rem;
-}
-
-.PichaTu .ActualPic img{
-    height: 55rem;
-    width: 100%;
-}
-
-.ActualMottoDiv{
-    position: absolute;
-    top: 2rem;
-    left: 3rem;
-}
-.ActualMottoDiv p{
-    font-size: 4rem;
-    color: orangered ;
-    font-family: "Rubik", sans-serif;
-}
-
-.IntroToMotto{
-    position: absolute;
-    top: 10rem;
-    left: 3rem;
-    border-radius: 0.5rem;
-    border: 0.2rem orangered solid;
-    transition: 0.7s;
-}
-.IntroToMotto p{
-    font-family: "Jersey 10", sans-serif;
-    font-size: 1.3rem;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    color: wheat;
-    transition: 0.7s;
-}
-.IntroToMotto p:hover{
-    color: white;
-    scale: 1.2;
-}
-.IntroToMotto:hover{
-    border: none;
-}
-
-/*END OF PICHA AND MY MOTTO*/
-
-
-
-
-
-
-
 
 /*START OF CONTACT*/
 
@@ -782,20 +588,17 @@ body{
 .TittleContDiv p{
     color:orangered;
     text-decoration: none;
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 2.5rem;
     font-family: "Rubik", sans-serif;
 }
 .DisplayContOptions{
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0rem auto 0rem;
+    width: 100%;
+    margin-left:5rem;
 }
 .SendMailDiv{
     display: flex;
     flex-direction: column;
-    width: 55%;
+    width: 40rem;
     position: relative;
 }
 
@@ -815,8 +618,9 @@ body{
 .LikeBefore p{
     color: orangered;
     font-family: "Rubik", sans-serif;  
-    font-size: 6rem;
+    font-size: 2rem;
     text-align: center;
+    width:100%;
 }
 .SendMailDiv div{
     margin-top: 0rem;
@@ -825,10 +629,10 @@ body{
     justify-content: space-between;
 }
 .SendMailDiv div input{
-    width: 47%;
-    font-size: 3rem;
-    padding: 1rem 1rem;
-    border-radius: 0.8rem;
+    width: 48%;
+    font-size: 1.1rem;
+    padding: 1rem 0.6rem;
+    border-radius: 0.5rem;
     background-color: rgb(34, 34, 34);
     color: white ;
     border: none;
@@ -836,38 +640,38 @@ body{
 }
 .SendMailDiv input{
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 1rem 0.6rem;
     background-color: rgb(34, 34, 34);
     border-radius: 0.8rem;
-    font-size: 3rem;
-    margin-top: 2rem;
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
     border: none;
     outline: none;
     color: white;
     font-family: "Rubik", sans-serif;
 }
 .MessageDiv{
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     width: 100%;
 }
 #Message{
     border: none;
     background-color: rgb(34, 34, 34);
     border-radius: 0.8rem;
-    font-size: 3rem;
-    padding: 1rem 1rem;
-    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: 1rem 0.6rem;
+    margin-top: 1.2rem;
     outline: none;
     color: white ;
     font-family: "Rubik", sans-serif;
 }
 #SendMessageBtn{
     padding: 0.5rem 0rem 0.5rem 0rem;
-    font-size: 4rem;
+    font-size: 2rem;
     cursor: pointer;
     background-color: rgb(34, 34, 34);
     border: none;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     border-radius: 0.8rem;
     color:orangered ;
     font-family: "Jersey 10", sans-serif;
@@ -876,29 +680,6 @@ body{
 #SendMessageBtn:hover{
     background-color: wheat;
     color: black;
-}
-.LinksToSocialsDiv{
-    width: 38%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(images/contactBackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.LinksToSocialsDiv p:first-child{
-    margin-top: 5rem;
-}
-.LinksToSocialsDiv p{
-    margin-top: 2rem;
-}
-.LinksToSocialsDiv p a{
-    text-decoration: none;
-    font-size: 5rem;
-    color: wheat;
-    font-family: "Rubik", sans-serif;
-    transition: 0.7s;
-}
-.LinksToSocialsDiv p a:hover{
-    color:orangered;
 }
 
 .FloatingContact1{
@@ -931,18 +712,6 @@ body{
 
 
 
-
-@media screen and (max-width:1680px){
-    /*START OF ABOUT */
-    .DisplayAbout2ndWrapper{
-        width: 88%;
-    }
-    .PichaAboutDiv{
-        width: 55%;
-    }
-    /*END OF ABOUT */
-}
-
 @media screen and (max-width:1665px){
 
     /*START OF CONTACT*/
@@ -953,24 +722,8 @@ body{
     .TittleContDiv p{
         font-size: 4.7rem;
     }
-    .DisplayContOptions{
-        width: 90%;
-    }
     .SendMailDiv{
         width: 60%;
-    }
-
-    .LinksToSocialsDiv{
-        width: 35%;
-    }
-    .LinksToSocialsDiv p:first-child{
-        margin-top: 9rem;
-    }
-    .LinksToSocialsDiv p{
-        margin-top: 1.8rem;
-    }
-    .LinksToSocialsDiv p a{
-        font-size: 4.7rem;
     }
     .FloatingContact1{
         right: 1rem;
@@ -1012,30 +765,6 @@ body{
 /*END ON PROJECTS*/
 }
 
-@media screen and (max-width:1525px){
-    /*START OF ABOUT */
-
-    .WordingAboutDiv #KichwaAbout{
-        font-size: 3.7rem;
-    }
-    #ContentAbout{
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
-    #Logo1{
-        right: 45%;
-    }
-    #Logo3{
-        top: 3.2rem;
-        right: 62%;
-    }
-    #Logo7{
-        top: 9rem;
-        right: 67%;
-    }
-    
-    /*END OF ABOUT */
-}
 
 @media screen and (max-width:1424px){
     
@@ -1219,52 +948,6 @@ body{
     /*END OF CONTACT*/
 }
 
-@media screen and (max-width:1370px){
-
-      /*START OF ABOUT*/
-
-    .PichaAboutDiv{
-        margin-top: 3rem;
-    }
-    #Logo1{
-        width: 3.8rem;
-        margin-top: 0rem;
-        right: 30%;
-    }
-    #Logo2{
-        width: 3.8rem;
-        top: 5rem;
-        right: 40%;
-    }
-    #Logo3{
-        width: 3.8rem;
-        top: 2rem;
-        right: 55%;
-    }
-    
-    #Logo4{
-        width: 3.8rem;
-    }
-
-    #Logo5{
-        width: 3.5rem;
-        top: 7rem;
-        right: 22%;
-    }
-
-    #Logo6{
-        width: 3.8rem;
-        top: 11rem;
-        right: 48%;
-    }
-    #Logo7{
-        width: 3.8rem;
-        top: 8rem;
-        right: 64%;
-    }
-
-    /*END OF ABOUT*/
-}
 
 @media screen and (max-width:1347px){
   /*START OF FLOATING BOXES AROUND*/
@@ -1330,9 +1013,6 @@ body{
 
     /*START OF CONTACT*/
 
-    .DisplayContOptions{
-        width: 97%;
-    }
     .SendMailDiv{
         width: 65%;
     }
@@ -1343,95 +1023,15 @@ body{
      /*END OF CONTACT*/
 }
 
-@media screen and (max-width:1310px){
-
-    /*START OF ABOUT*/
-
-    .PichaAboutDiv{
-        margin-top: 4rem;
-    }
-    #Logo1{
-        width: 3.4rem;
-        right: 30%; 
-        top: 1rem;
-    }
-    #Logo2{
-        width: 3.4rem;
-        top: 5rem;
-        right: 42%;
-    }
-    #Logo3{
-        width: 3.4rem;
-    }
-    
-    #Logo4{
-        width: 3.4rem;
-        top: 11rem;
-        right: 32%;
-    }
-
-    #Logo5{
-        width: 3.3rem;
-    }
-
-    #Logo6{
-        width: 3.4rem;
-        top: 10rem;
-        right: 48%;
-    }
-    #Logo7{
-        width: 3.4rem;
-        top: 7rem;
-        right: 64%;
-    }
-
-    /*END OF ABOUT*/
-}
 
 @media screen and (max-width:1272px){
 
-
-    /*START OF PICHA AND MY MOTTO*/
-
-
-    .PichaTu .ActualPic{
-        width: 90%;
-    }
-
-
-    .ActualMottoDiv{
-        position: absolute;
-        top: 1rem;
-        left: 2rem;
-    }
-    .ActualMottoDiv p{
-        font-size: 3.5rem;
-    }
-
-    .IntroToMotto{
-        top: 8rem;
-        left: 1rem;
-    }
-    .IntroToMotto p{
-        font-size: 1.2rem;
-    }
-
-    /*END OF PICHA AND MY MOTTO*/
 
     /*START OF CONTACT*/
 
     .SendMailDiv{
         width: 75%;
     }    
-    .LinksToSocialsDiv{
-        width: 22%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-    .LinksToSocialsDiv p a{
-        font-size: 3.5rem;
-    }
     /*END OF CONTACT*/
 }
 
@@ -1444,20 +1044,8 @@ body{
     .TittleContDiv{
         margin-left: 0.7rem;
     }
-    .DisplayContOptions{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
     .SendMailDiv{
         width: 90%;
-    }
-    .LinksToSocialsDiv{
-        width: 100%;
-    }
-    .LinksToSocialsDiv p a{
-        font-size: 4.5rem;
     }
     .FloatingContact1{
         top: 58rem;
@@ -1535,52 +1123,6 @@ body{
     /*END ON PROJECTS*/
 }
 
-@media screen and (max-width:1145px){
-
-    /*START OF ABOUT*/
-
-    .PichaAboutDiv{
-        margin-top: 5rem;
-    }
-    #Logo1{
-        width: 3.4rem;
-        right: 30%; 
-        top: 0rem;
-    }
-    #Logo2{
-        width: 3.4rem;
-        top: 4rem;
-        right: 42%;
-    }
-    #Logo3{
-        width: 3.4rem;
-        top: 1rem;
-    }
-    
-    #Logo4{
-        width: 3.4rem;
-        top: 10rem;
-        right: 32%;
-    }
-
-    #Logo5{
-        width: 3.3rem;
-        top: 5.4rem;
-    }
-
-    #Logo6{
-        width: 3.4rem;
-        top: 9rem;
-        right: 48%;
-    }
-    #Logo7{
-        width: 3.4rem;
-        top: 6rem;
-        right: 64%;
-    }
-
-    /*END OF ABOUT*/
-}
 
 @media screen and (max-width:1126px){
     /*START ON PROJECTS*/
@@ -1627,87 +1169,6 @@ body{
 }
 
 
-
-@media screen and (max-width:1060px){
-
-
-    /*START OF ABOUT*/
-
-    .DisplayAbout2ndWrapper{
-        width: 97%;
-    }
-    .PichaAboutDiv{
-        margin-top: 5.5rem;
-    }
-    #Logo1{
-        width: 3.1rem;
-        right: 30%; 
-        top: 0rem;
-    }
-    #Logo2{
-        width: 3.1rem;
-        top: 3.5rem;
-        right: 42%;
-    }
-    #Logo3{
-        width: 3.1rem;
-        top: 0.5rem;
-    }
-    
-    #Logo4{
-        width: 3.1rem;
-        top: 8.5rem;
-        right: 32%;
-    }
-
-    #Logo5{
-        width: 3rem;
-        top: 5rem;
-    }
-
-    #Logo6{
-        width: 3.1rem;
-        top: 8rem;
-        right: 50%;
-    }
-    #Logo7{
-        width: 3.1rem;
-        top: 5.5rem;
-        right: 64%;
-    }
-
-    /*END OF ABOUT*/
-    /*START OF PICHA AND MY MOTTO*/
-
-    .PichaTu .ActualPic{
-        width: 97%;
-        padding-top: 7rem;
-    }
-
-    .PichaTu .ActualPic img{
-        height: 55rem;
-        width: 100%;
-    }
-
-    .ActualMottoDiv{
-        top: 2rem;
-        left: 1rem;
-    }
-    .ActualMottoDiv p{
-        font-size: 3rem;
-    }
-
-    .IntroToMotto{
-        top: 9rem;
-        left: 1rem;
-    }
-
-    .IntroToMotto p:hover{
-        scale: 1.1;
-    }
-
-    /*END OF PICHA AND MY MOTTO*/
-}
 
 @media screen and (max-width:1024px){
     /*START OF WORDS AT HEROSECTION */
@@ -1785,9 +1246,6 @@ body{
 
     /*START OF CONTACT*/
 
-    .DisplayContOptions{
-        width: 100%;
-    }
     .SendMailDiv{
         width: 90%;
     }
@@ -1799,66 +1257,6 @@ body{
 }
 
 @media screen and (max-width:903px){
-
-    /*START OF ABOUT*/
-
-    .PaddingAbout2nd{
-        padding-top: 2rem;
-        padding-bottom: 4rem;
-    }
-    .DisplayAbout2ndWrapper{
-        width: 85%;
-        flex-direction: column-reverse;
-    }
-    .WordingAboutDiv{
-        width: 90%;
-    }
-
-    .PichaAboutDiv{
-        width: 90%;
-        margin-top: 0rem;
-    }
-
-    #Logo1{
-        width: 3.6rem;
-        top: 0;
-        right: 37%;
-    }
-    #Logo2{
-        width: 3.6rem;
-        top: 6.5rem;
-        right: 38%;
-    }
-    #Logo3{
-        width: 3.6rem;
-        top: 3rem;
-        right: 57%;
-    }
-    
-    #Logo4{
-        width: 3.6rem;
-        top: 12rem;
-        right: 30%;
-    }
-    
-    #Logo5{
-        width: 3.4rem;
-        top: 6rem;
-        right: 22%;
-    }
-    
-    #Logo6{
-        width: 3.6rem;
-        top: 10rem;
-        right: 50%;
-    }
-    #Logo7{
-        width: 3.6rem;
-        top: 8.5rem;
-        right: 67%;
-    }
-
-    /*END OF ABOUT*/
 
     /*START OF CONTACT*/
 
@@ -2022,57 +1420,6 @@ body{
 }
 
 @media screen and (max-width:752px){
-  
-    /*START OF ABOUT*/
-    .DisplayAbout2ndWrapper{
-        width: 97%;
-    }
-    .WordingAboutDiv{
-      width: 100%;
-    }
-    .WordingAboutDiv #KichwaAbout{
-        font-size: 3.5rem;
-    }
-    #Logo1{
-        width: 3.2rem;
-        top: 1rem;
-        right: 37%;
-    }
-    #Logo2{
-        width: 3.2rem;
-        top: 7rem;
-        right: 39%;
-    }
-    #Logo3{
-        width: 3.2rem;
-        top: 3rem;
-        right: 54%;
-    }
-    
-    #Logo4{
-        width: 3.2rem;
-        top: 12rem;
-        right: 33%;
-    }
-    
-    #Logo5{
-        width: 3.2rem;
-        top: 6rem;
-        right: 23%;
-    }
-    
-    #Logo6{
-        width: 3.2rem;
-        top: 11rem;
-        right: 50%;
-    }
-    #Logo7{
-        width: 3.2rem;
-        top: 8.5rem;
-        right: 62%;
-    }
-
-    /*END OF ABOUT*/
 
     /*START OF CONTACT*/
 
@@ -2185,51 +1532,6 @@ body{
 }
 
 
-@media screen and (max-width:641px){
-
-/*START OF ABOUT*/
-
-    #Logo1{
-        width: 3rem;
-        top: 1rem;
-        right: 37%;
-    }
-    #Logo2{
-        width: 3rem;
-        top: 6rem;
-        right: 36%;
-    }
-    #Logo3{
-        width: 3rem;
-        top: 4rem;
-        right: 51%;
-    }
-
-    #Logo4{
-        width: 3rem;
-        top: 10.5rem;
-        right: 31%;
-    }
-
-    #Logo5{
-        width: 3rem;
-        top: 6rem;
-        right: 23%;
-    }
-
-    #Logo6{
-        width: 3rem;
-        top: 10rem;
-        right: 48%;
-    }
-    #Logo7{
-        width: 3rem;
-        top: 8rem;
-        right: 61%;
-    }
-
-/*END OF ABOUT*/
-}
 @media screen and (max-width:627px){
 
     /*start of hobbies*/
@@ -2271,64 +1573,6 @@ body{
 
 }
 
-
-@media screen and (max-width:596px){
-    /*START OF ABOUT*/
-
-    .WordingAboutDiv #KichwaAbout{
-        font-size: 3rem;
-    }
-    #KichwaAbout::after{
-        font-size: 0.9rem;
-    }
-    #KichwaAbout::before{
-        font-size: 0.9rem;
-    }
-    #ContentAbout{
-        font-size: 1rem;
-    }
-
-    #Logo1{
-        width: 3rem;
-        top: 0rem;
-        right: 37%;
-    }
-    #Logo2{
-        width: 3rem;
-        top: 5rem;
-        right: 39%;
-    }
-    #Logo3{
-        width: 3rem;
-        top: 2rem;
-        right: 54%;
-    }
-
-    #Logo4{
-        width: 3rem;
-        top: 9rem;
-        right: 31%;
-    }
-
-    #Logo5{
-        width: 3rem;
-        top: 4.5rem;
-        right: 24%;
-    }
-
-    #Logo6{
-        width: 3rem;
-        top: 8.5rem;
-        right: 48%;
-    }
-    #Logo7{
-        width: 3rem;
-        top: 6.5rem;
-        right: 61%;
-    }
-
-    /*END OF ABOUT*/
-}
 
 @media screen and (max-width:582px){
 
@@ -2380,10 +1624,6 @@ body{
 
     .LikeBefore p{
         font-size: 4rem;
-    }
-
-    .LinksToSocialsDiv p:first-child{
-        margin-top: 12rem;
     }
     .FloatingContact1{
         top: 50rem;
@@ -2467,55 +1707,6 @@ body{
     /*END OF CONTACT*/
 }
 
-
-
-
-@media screen and (max-width:530px){
-
-    /*START OF ABOUT*/
-
-    
-    #Logo1{
-        width: 3rem;
-        margin-top: -1.2rem;
-        right: 32%;
-    }
-    #Logo2{
-        width: 3rem;
-        top: 3.6rem;
-        right: 39%;
-    }
-    #Logo3{
-        width: 3rem;
-        top: 1rem;
-        right: 56%;
-    }
-
-    #Logo4{
-        width: 3rem;
-        top: 7.5rem;
-        right: 31%;
-    }
-
-    #Logo5{
-        width: 3rem;
-        top: 4.5rem;
-        right: 20%;
-    }
-
-    #Logo6{
-        width: 3rem;
-        top: 6.5rem;
-        right: 50%;
-    }
-    #Logo7{
-        width: 3rem;
-        top: 5.5rem;
-        right: 69%;
-    }
-
-    /*END OF ABOUT*/
-}
 
 
 @media screen and (max-width:516px){
@@ -2768,45 +1959,6 @@ body{
     }
     /*END OF FLOATING BOXES AROUND*/
 
-    /*START OF PICHA AND MY MOTTO*/
-
-    .PichaTu{
-    height: auto;
-    }
-    .paddingPichaMotto{
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-    }
-    .PichaTu .ActualPic{
-        width: 97%;
-    }
-
-    .PichaTu .ActualPic img{
-        height: 55rem;
-    }
-
-    .ActualMottoDiv{
-        top: 1.5rem;
-        left: 0.2rem;
-    }
-    .ActualMottoDiv p{
-        font-size: 3rem;
-    }
-
-    .IntroToMotto{
-        top: 7rem;
-        left: 0.2rem;
-    }
-    .IntroToMotto p{
-        font-size: 1rem;
-        padding: 0.4rem 0.6rem;
-    }
-    .IntroToMotto p:hover{
-        letter-spacing: 0.1rem;
-        scale: 1.02;
-    }
-
-    /*END OF PICHA AND MY MOTTO*/
 
      /*START OF CONTACT*/
 
@@ -2819,12 +1971,6 @@ body{
     }
     .TittleContDiv p{
         font-size: 3rem;
-    }
-    .DisplayContOptions{
-        flex-direction: column;
-        justify-content: start;
-        width: 97%;
-        margin: 0rem auto 0rem;
     }
     .SendMailDiv{
         display: flex;
@@ -2856,17 +2002,6 @@ body{
     #SendMessageBtn{
         font-size: 3rem;
     }
-
-    .LinksToSocialsDiv{
-        padding-top: 5rem;
-    }
-    .LinksToSocialsDiv p:first-child{
-        margin-top: 8rem;
-    }
-
-    .LinksToSocialsDiv p a{
-        font-size: 3rem;
-    }
     .FloatingContact1{
         top: 42rem;
         right: 0.1rem;
@@ -2885,37 +2020,6 @@ body{
     /*END OF CONTACT*/
 }
 
-@media screen and (max-width:460px){
-
-    /*START OF ABOUT*/
-
-    #Logo1{
-        margin-top: -2rem;
-    }
-    #Logo2{
-        top: 3rem;
-    }
-    #Logo3{
-        top: 0rem;
-    }
-
-    #Logo4{
-        top: 6.5rem;
-    }
-
-    #Logo5{
-        top: 3.5rem;
-    }
-
-    #Logo6{
-        top: 5.5rem;
-    }
-    #Logo7{
-        top: 4.5rem;
-    }
-
-    /*END OF ABOUT*/
-}
 
 @media screen and (max-width:439px){
         /*START OF WORDS AT HEROSECTION */
@@ -2988,42 +2092,6 @@ body{
 
     /*END OF MENU THAT APPEARS*/
 
-
-    /*START OF ABOUT*/
-
-    #Logo1{
-        width: 2.6rem;
-        margin-top: -2.6rem;
-    }
-    #Logo2{
-        width: 2.6rem;
-        top: 2rem;
-    }
-    #Logo3{
-        width: 2.6rem;
-        margin-top: -1rem;
-    }
-
-    #Logo4{
-        width: 2.6rem;
-        top: 5.5rem;
-    }
-
-    #Logo5{
-        width: 2.6rem;
-        top: 2.5rem;
-    }
-
-    #Logo6{
-        width: 2.6rem;
-        top: 4.5rem;
-    }
-    #Logo7{
-        width: 2.6rem;
-        top: 3.5rem;
-    }
-
-    /*END OF ABOUT*/
 
 
     /*START OF CONTACT*/
@@ -3147,47 +2215,6 @@ body{
     }
 }
 
-@media screen and (max-width:361px){
-
-    /*START OF ABOUT*/
-
-    #Logo1{
-        width: 2.3rem;
-        margin-top: -2.6rem;
-    }
-    #Logo2{
-        width: 2.3rem;
-        top: 1rem;
-        right: 41% ;
-    }
-    #Logo3{
-        width: 2.3rem;
-        margin-top: -1rem;
-        right: 58%;
-    }
-
-    #Logo4{
-        width: 2.3rem;
-        top: 4.5rem;
-    }
-
-    #Logo5{
-        width: 2.3rem;
-        top: 1.5rem;
-    }
-
-    #Logo6{
-        width: 2.3rem;
-        top: 3.5rem;
-    }
-    #Logo7{
-        width: 2.3rem;
-        top: 2.5rem;
-    }
-
-    /*END OF ABOUT*/    
-}
-
 @media screen and (max-width:349px){
 
     /*START OF CONTACT*/    
@@ -3202,45 +2229,4 @@ body{
     }
 
     /*END OF CONTACT*/
-}
-
-@media screen and (max-width:324px){
-
-    /*START OF ABOUT*/
-
-    #Logo1{
-        width: 2rem;
-        margin-top: -2.6rem;
-    }
-    #Logo2{
-        width: 2rem;
-        top: 1rem;
-        right: 41% ;
-    }
-    #Logo3{
-        width: 2rem;
-        margin-top: -1rem;
-        right: 58%;
-    }
-
-    #Logo4{
-        width: 2rem;
-        top: 4.5rem;
-    }
-
-    #Logo5{
-        width: 2rem;
-        top: 1.5rem;
-    }
-
-    #Logo6{
-        width: 2rem;
-        top: 3.5rem;
-    }
-    #Logo7{
-        width: 2rem;
-        top: 2.5rem;
-    }
-
-    /*END OF ABOUT*/    
 }
