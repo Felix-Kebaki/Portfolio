@@ -65,7 +65,7 @@ let LikeBefore = document.querySelector(".LikeBefore");
 // ✅ Initialize EmailJS (v4 style)
 window.onload = function () {
     emailjs.init({
-        publicKey: "fWj6sGTmzVaMoqup2", // 🔁 replace if changed
+        publicKey: "fWj6sGTmzVaMoqup2",
     });
 };
 
