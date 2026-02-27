@@ -24,8 +24,8 @@ function sendMail(){
             Message : Message.value,
         }
     
-        var serviceId="service_vfzczjf";
-        var templateId="template_gesy2yu";
+        var serviceId="service_70rsc46";
+        var templateId="template_vr84iz8";
     
         emailjs.send(serviceId,templateId,params)
         .then(res => {
