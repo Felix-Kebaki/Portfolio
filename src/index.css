@@ -1,0 +1,38 @@
+@font-face {
+  font-family: title-fonts;
+  src: url("./assets/fonts/chalga.otf");
+}
+
+:root {
+  --text: #ededed;
+  --text-s:#888887;
+  --text-h: orangered;
+  --text-h2:#a02b00;
+  --bg: #0a0a0a;
+  --bg-2:#f9f3ec;
+  --lines:rgba(255, 68, 0, 0.137);
+
+  --titles:"title-fonts",san-serif;
+  --text-font:"Jersey 10", sans-serif;
+}
+
+main{
+  overflow-x: hidden;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.ClosingLine{
+  background-color: #88888744;
+  width:100%;
+  margin-top:4rem;
+  height: 0.01rem;
+}                                                                                                                                       

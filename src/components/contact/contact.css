@@ -1,0 +1,393 @@
+.ContactMainSec {
+  width: 100%;
+  background-color: var(--bg);
+}
+
+.ContactContainerWithAnimationMainDiv {
+  width: 100%;
+  position: relative;
+  height: 82rem;
+  background-color: var(--bg);
+}
+
+.ContactMainDiv {
+  width: 90%;
+  margin: 0rem auto 0rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ContactWelcomingMsgMainDiv {
+  margin: 3rem auto 0rem;
+  width: 50rem;
+}
+
+.ContactWelcomingMsgMainDiv p:first-child {
+  font-size: 4rem;
+  font-family: var(--titles);
+  color: var(--text-h);
+  text-align: center;
+}
+
+.ContactWelcomingMsgMainDiv p:last-child {
+  font-family: var(--text-font);
+  color: var(--text-s);
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 80%;
+  margin: 0rem auto 0rem;
+}
+
+.ContactFormMainDiv {
+  border-radius: 0.2rem;
+  padding: 1rem;
+  width: 50rem;
+  margin: 4rem auto 0rem;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.1rem #88888752 solid;
+}
+
+.InsideContactFormMainDiv {
+  width: 100%;
+  background-color: var(--bg);
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.ContactCornerColorDiv {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+}
+
+.ContactCornerColorDiv:nth-child(1) {
+  top: -0.07rem;
+  right: -0.07rem;
+  border-right: 0.15rem var(--text-h) solid;
+  border-top: 0.15rem var(--text-h) solid;
+  border-top-right-radius: 0.2rem;
+}
+
+.ContactCornerColorDiv:nth-child(2) {
+  top: -0.07rem;
+  left: -0.05rem;
+  border-left: 0.15rem var(--text-h) solid;
+  border-top: 0.15rem var(--text-h) solid;
+  border-top-left-radius: 0.2rem;
+}
+
+.ContactCornerColorDiv:nth-child(3) {
+  bottom: -0.07rem;
+  left: -0.05rem;
+  border-left: 0.15rem var(--text-h) solid;
+  border-bottom: 0.15rem var(--text-h) solid;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.ContactCornerColorDiv:nth-child(4) {
+  bottom: -0.07rem;
+  right: -0.07rem;
+  border-right: 0.15rem var(--text-h) solid;
+  border-bottom: 0.15rem var(--text-h) solid;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.FirstAndLastNameDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.FirstAndLastNameDiv div {
+  width: 48%;
+}
+
+.FirstAndLastNameDiv div label {
+  color: var(--bg-2);
+  font-size: 0.8rem;
+  font-family: var(--text-font);
+}
+
+.FirstAndLastNameDiv div input {
+  width: 100%;
+  padding: 0.8rem 0.2rem;
+  background: transparent;
+  outline: none;
+  border: 0.1rem var(--text-s) solid;
+  color: var(--text);
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.InputMainDiv {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.InputMainDiv label {
+  color: var(--bg-2);
+  font-size: 0.8rem;
+  font-family: var(--text-font);
+}
+
+.InputMainDiv input {
+  width: 100%;
+  padding: 0.8rem 0.2rem;
+  background: transparent;
+  outline: none;
+  border: 0.1rem var(--text-s) solid;
+  color: var(--text);
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.InputMainDiv textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 8rem;
+  padding: 0.8rem 0.2rem;
+  background: transparent;
+  outline: none;
+  border: 0.1rem var(--text-s) solid;
+  color: var(--text);
+  border-radius: 0.2rem;
+  margin-top: 0.4rem;
+  font-family: var(--text-font);
+}
+
+.SubmitformBtnDiv {
+  margin-top: 0.8rem;
+  width: 100%;
+}
+
+.SubmitformBtnDiv button {
+  background-color: var(--text-h2);
+  color: var(--text);
+  width: 100%;
+  border: none;
+  padding: 0.5rem 0rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.ResponseOnMsgSentMainDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--bg);
+  z-index: -99;
+}
+
+.ShowResponseMsg {
+  z-index: 0;
+}
+
+.ResponseOnMsgSentMainDiv p {
+  color: var(--bg-2);
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 90%;
+  margin: 0rem auto 0rem;
+}
+
+.LinksMainDiv {
+  background: rgba(0, 0, 0, 0.623);
+  width: 60rem;
+  height: auto;
+  margin: 2rem auto 0rem;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.LinksTopDiv {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  column-gap: 0.5rem;
+  padding: 2rem 0.2rem 2rem 0.5rem;
+  align-items: center;
+  border-bottom: 0.04rem #88888752 dotted;
+}
+
+.LinksTopDiv div {
+  width: 0.8rem;
+  background-color: var(--text-h);
+  height: 0.04rem;
+  border-radius: 0.2rem;
+}
+
+.LinksTopDiv p {
+  color: var(--text-s);
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  font-family: var(--text-font);
+}
+
+.ContactSocilLinksDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.ContactSocilLinksDiv div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.04rem #88888752 dotted;
+  padding: 1rem 0.2rem 1rem 0.2rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.LinkNameOnLinkDiv {
+  font-size: 2.8rem;
+  font-family: var(--titles);
+  color: var(--bg-2);
+  font-style: italic;
+}
+
+.ContactSocilLinksDiv div p:nth-child(2) {
+  font-size: 0.9rem;
+  color: var(--text-s);
+  font-family: var(--text-font);
+}
+
+.ContactSocilLinksIcons {
+  font-size: 1.3rem;
+  color: var(--bg-2);
+  rotate: 45deg;
+}
+
+.ContactSocilLinksDiv div:hover .ContactSocilLinksIcons {
+  color: var(--text-h2);
+}
+
+.ContactSocilLinksDiv div:hover .LinkNameOnLinkDiv {
+  color: var(--text-h2);
+}
+
+
+@media screen and (max-width: 1600px) {
+  .ContactWelcomingMsgMainDiv p:first-child {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .ContactMainDiv {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  .ContactWelcomingMsgMainDiv {
+    width: 100%;
+  }
+  .ContactWelcomingMsgMainDiv p:last-child {
+    max-width: 100%;
+  }
+  .ContactFormMainDiv {
+    width: 90%;
+    margin: 3rem auto 0rem;
+  }
+  .LinksMainDiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .ContactContainerWithAnimationMainDiv {
+    height: 78rem;
+  }
+  .ContactWelcomingMsgMainDiv p:first-child {
+    font-size: 2.4rem;
+  }
+
+  .ContactSocilLinksDiv div {
+    column-gap: 1rem;
+  }
+
+  .LinkNameOnLinkDiv {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .ContactContainerWithAnimationMainDiv {
+    height: 74rem;
+  }
+  .ContactWelcomingMsgMainDiv p:first-child {
+    font-size: 2rem;
+  }
+
+  .LinkNameOnLinkDiv {
+    font-size: 1.4rem;
+  }
+
+  .ContactSocilLinksDiv div p:nth-child(2) {
+    font-size: 0.7rem;
+  }
+  .ContactSocilLinksIcons {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .FirstAndLastNameDiv div label {
+    font-size: 0.7rem;
+  }
+
+  .FirstAndLastNameDiv div input {
+    padding: 0.5rem 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .InputMainDiv {
+    width: 100%;
+    margin-top: 0.7rem;
+  }
+
+  .InputMainDiv label {
+    font-size: 0.7rem;
+  }
+
+  .InputMainDiv input {
+    padding: 0.5rem 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .InputMainDiv textarea {
+    padding: 0.5rem 0.2rem;
+    margin-top: 0.2rem;
+  }
+
+  .SubmitformBtnDiv button {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ContactFormMainDiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 302px) {
+  .ContactContainerWithAnimationMainDiv {
+    height: 78rem;
+  }
+}

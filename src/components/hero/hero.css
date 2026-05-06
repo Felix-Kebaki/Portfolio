@@ -1,0 +1,865 @@
+.HeroMainSec {
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: 80%;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/*START OF FLOATING BOXES AROUND*/
+
+/*start of how much i love doing developing websites*/
+.HowMuchLoveDiv {
+  position: absolute;
+  top: 7%;
+  right: 20rem;
+  border: 0.1rem var(--bg-2) solid;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 0.4rem;
+}
+.HowMuchLoveDiv:hover {
+  border: none;
+  scale: 1.2;
+}
+.HowMuchLoveDiv:hover p {
+  color: var(--text-h2);
+  letter-spacing: 0.2rem;
+}
+.HowMuchLoveDiv p {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  color: var(--bg-2);
+  transition: 0.7s;
+}
+/*end of how much i love doing developing websites*/
+
+/*start of how much your users will love your websites*/
+.TheyWillLove {
+  position: absolute;
+  bottom: 4%;
+  left: 4rem;
+  border: 0.1rem var(--bg-2) solid;
+  transition: 0.7s;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.TheyWillLove p {
+  padding: 0.5rem 1rem;
+  font-family: "Jersey 10", sans-serif;
+  font-size: 0.8rem;
+  color: var(--bg-2);
+  transition: 0.7s;
+}
+.TheyWillLove:hover {
+  border: none;
+  scale: 1.2;
+}
+.TheyWillLove:hover p {
+  color: var(--text-h2);
+  letter-spacing: 0.1rem;
+}
+
+/*end of how much your users will love your websites*/
+
+/*start of hobbies*/
+
+.HobbiesTop {
+  position: absolute;
+  bottom: 25%;
+  right: 10rem;
+  border: 0.1rem var(--bg-2) solid;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.HobbiesTop p {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-family: "Jersey 10", sans-serif;
+  position: relative;
+  overflow: hidden;
+  color: var(--bg-2);
+}
+.HobbiesTop p::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "My Hobbies";
+  background: var(--bg-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--text-h2);
+  transition: 0.7s;
+  font-style: italic;
+  opacity: 0;
+}
+
+.HobbiesTop p:hover::before {
+  opacity: 1;
+}
+
+/*END OF FLOATING BOXES AROUND*/
+
+/*START OF WORDS AT HEROSECTION */
+
+.HeroSecContent {
+  width: 100%;
+  position: absolute;
+  top: 29%;
+  height: auto;
+}
+.HeroSecContent .IntroNameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HeroSecContent .IntroNameDiv #MyNameTop {
+  font-size: 8rem;
+  font-family: "Rubik", sans-serif;
+  color: var(--text);
+}
+#referenceToAm {
+  position: relative;
+}
+#MyNameTop #referenceToAm::before {
+  content: "AM";
+  border: 0.12rem var(--text-h2) solid;
+  border-radius: 0.5rem;
+  color: var(--text-h2);
+  font-family: var(--titles);
+  font-size: 3rem;
+  padding: 0.2rem 1rem;
+  top: 2.5rem;
+  right: 6rem;
+  position: absolute;
+}
+
+#WhatDoTop {
+  font-size: 6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: var(--text);
+}
+#bothTop {
+  font-size: 6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: var(--text);
+}
+#WhatDoTopColor {
+  color: var(--text-h2);
+  font-size: 8rem;
+  font-family: "Jersey 10", sans-serif;
+  letter-spacing: 0.2rem;
+}
+#PlaceTop {
+  color: var(--text);
+  font-size: 6rem;
+  font-family: "Rubik", sans-serif;
+}
+
+/*start of social links*/
+
+.SocialsIconsHero {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.5rem;
+  z-index: 77;
+}
+.SocialsIconsHero p {
+  margin-top: 0.4rem;
+}
+.SocialsIconsHero p a {
+  text-decoration: none;
+  color: var(--bg-2);
+  font-size: 1.3rem;
+  transition: 0.7s;
+}
+.SocialsIconsHero p a:hover {
+  color: var(--text-h2);
+}
+
+/*end of social links*/
+
+@media screen and (max-width: 1480px) {
+  /*START OF FLOATING BOXES AROUND*/
+
+  /*start of how much i love doing developing websites*/
+  .HowMuchLoveDiv {
+    right: 16rem;
+  }
+  /*end of how much i love doing developing websites*/
+
+  /*start of how much your users will love your websites*/
+  .TheyWillLove {
+    left: 2rem;
+  }
+
+  /*end of how much your users will love your websites*/
+
+  /*start of hobbies*/
+
+  .HobbiesTop {
+    right: 7rem;
+  }
+
+  /*END OF FLOATING BOXES AROUND*/
+
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent .IntroNameDiv {
+    width: 97%;
+    margin: 0rem auto 0rem;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 7.5rem;
+  }
+  #referenceToAm {
+    position: relative;
+  }
+  #MyNameTop #referenceToAm::before {
+    font-size: 2.3rem;
+    padding: 0.2rem 1rem;
+    top: 1.5rem;
+    right: 5rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5.5rem;
+  }
+  #bothTop {
+    font-size: 5.5rem;
+  }
+  #PlaceTop {
+    font-size: 5.5rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 1347px) {
+  /*START OF FLOATING BOXES AROUND*/
+  /*start of how much i love doing developing websites*/
+  .HowMuchLoveDiv {
+    top: 14%;
+    right: 15rem;
+  }
+  .HowMuchLoveDiv:hover {
+    scale: 1.1;
+  }
+  /*end of how much i love doing developing websites*/
+
+  /*start of how much your users will love your websites*/
+  .TheyWillLove {
+    bottom: 2%;
+    left: 4rem;
+  }
+
+  /*end of how much your users will love your websites*/
+
+  /*start of hobbies*/
+
+  .HobbiesTop {
+    right: 5rem;
+    bottom: 13%;
+  }
+
+  /*END OF FLOATING BOXES AROUND*/
+
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 7rem;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    font-size: 2.4rem;
+    top: 1.4rem;
+    right: 4rem;
+  }
+
+  #WhatDoTop {
+    font-size: 6rem;
+  }
+  #bothTop {
+    font-size: 5.5rem;
+  }
+  #WhatDoTopColor {
+    font-size: 6.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #PlaceTop {
+    font-size: 5.5rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 1192px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 33%;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 6rem;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    font-size: 2.2rem;
+    top: 1rem;
+    right: 3.6rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5.5rem;
+  }
+  #bothTop {
+    font-size: 4rem;
+  }
+  #WhatDoTopColor {
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+  }
+  #PlaceTop {
+    font-size: 4rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 1102px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 35%;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5.5rem;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    top: 1rem;
+    right: 3.5rem;
+    font-size: 2rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5.2rem;
+  }
+  #bothTop {
+    font-size: 4rem;
+  }
+  #WhatDoTopColor {
+    font-size: 5.5rem;
+    letter-spacing: 0.1rem;
+  }
+  #PlaceTop {
+    font-size: 4rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 1024px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 35%;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5.2rem;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    top: 1rem;
+    right: 3.5rem;
+    font-size: 2rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5rem;
+  }
+  #bothTop {
+    font-size: 3.7rem;
+  }
+  #WhatDoTopColor {
+    font-size: 5.1rem;
+    letter-spacing: 0.1rem;
+  }
+  #PlaceTop {
+    font-size: 3.7rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 967px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5rem;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    top: 1rem;
+    right: 3.5rem;
+    font-size: 2rem;
+  }
+
+  #WhatDoTop {
+    font-size: 4.5rem;
+  }
+  #bothTop {
+    font-size: 3.3rem;
+  }
+  #WhatDoTopColor {
+    font-size: 4.7rem;
+    letter-spacing: 0.1rem;
+  }
+  #PlaceTop {
+    font-size: 3.3rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 867px) {
+
+  /*START OF FLOATING BOXES AROUND*/
+
+  /*start of how much i love doing developing websites*/
+  .HowMuchLoveDiv {
+    top: 6rem;
+    right: 1rem;
+  }
+  .HowMuchLoveDiv:hover {
+    border: none;
+    scale: 1.1;
+  }
+
+  /*end of how much i love doing developing websites*/
+
+  /*start of how much your users will love your websites*/
+  .TheyWillLove {
+    bottom: 2%;
+    left: 3rem;
+  }
+
+  /*end of how much your users will love your websites*/
+
+  /*start of hobbies*/
+
+  .HobbiesTop {
+    bottom: 12%;
+    right: 0.6rem;
+  }
+
+  /*END OF FLOATING BOXES AROUND*/
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 19%;
+    left: 0rem;
+  }
+  .HeroSecContent .IntroNameDiv {
+    flex-wrap: wrap;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5.7rem;
+    text-align: center;
+    max-width: 85%;
+    margin: 0rem auto 0rem;
+  }
+  #referenceToAm {
+    font-size: 5.7rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    font-size: 1.9rem;
+    top: 1.4rem;
+    right: 3.1rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5.5rem;
+    text-align: center;
+    max-width: 80%;
+    margin: 0rem auto 0rem;
+  }
+  #bothTop {
+    font-size: 5.8rem;
+    text-align: center;
+  }
+  #WhatDoTopColor {
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+  }
+  #PlaceTop {
+    font-size: 5.2rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 744px) {
+  /*START OF FLOATING BOXES AROUND*/
+
+  /*start of how much i love doing developing websites*/
+  .HowMuchLoveDiv p {
+    font-size: 0.7rem;
+  }
+  /*end of how much i love doing developing websites*/
+
+  /*start of how much your users will love your websites*/
+  .TheyWillLove {
+    bottom: 2%;
+    left: 0.4rem;
+  }
+  .TheyWillLove p {
+    font-size: 0.7rem;
+  }
+  .TheyWillLove:hover {
+    scale: 1.01;
+  }
+
+  /*end of how much your users will love your websites*/
+
+  /*start of hobbies*/
+  .HobbiesTop p {
+    font-size: 0.7rem;
+  }
+
+  /*END OF FLOATING BOXES AROUND*/
+
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 20%;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5.3rem;
+    max-width: 90%;
+  }
+  #referenceToAm {
+    font-size: 5.2rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    font-size: 1.9rem;
+    top: 0.9rem;
+  }
+
+  #WhatDoTop {
+    font-size: 5.1rem;
+    max-width: 90%;
+  }
+  #bothTop {
+    font-size: 5.3rem;
+  }
+  #WhatDoTopColor {
+    font-size: 5.6rem;
+  }
+  #PlaceTop {
+    font-size: 4.8rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 627px) {
+  /*start of hobbies*/
+  .HobbiesTop {
+    bottom: 18%;
+  }
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 5rem;
+    max-width: 90%;
+  }
+  #referenceToAm {
+    font-size: 5rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    font-size: 1.9rem;
+    top: 0.9rem;
+  }
+
+  #WhatDoTop {
+    font-size: 4.7rem;
+    max-width: 90%;
+  }
+  #bothTop {
+    font-size: 4.8rem;
+  }
+  #WhatDoTopColor {
+    font-size: 5rem;
+  }
+  #PlaceTop {
+    font-size: 4.3rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 570px) {
+    /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 4.2rem;
+  }
+
+  #WhatDoTop {
+    font-size: 3.2rem;
+  }
+  #bothTop {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 30%;
+    left: 0rem;
+  }
+  .HeroSecContent .IntroNameDiv {
+    width: 97%;
+    margin: 0rem auto 0rem;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 4rem;
+    max-width: 87%;
+  }
+
+  #MyNameTop #referenceToAm {
+    font-size: 4rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    border-radius: 0.3rem;
+    font-size: 1.23rem;
+    padding: 0.1rem 0.5rem;
+    top: 0.7rem;
+    right: 2.4rem;
+  }
+
+  #WhatDoTop {
+    font-size: 3rem;
+  }
+  #bothTop {
+    font-size: 3rem;
+  }
+  #WhatDoTopColor {
+    font-size: 4rem;
+  }
+  #PlaceTop {
+    font-size: 3rem;
+  }
+
+  .SocialsIconsHero {
+  bottom: 0.4rem;
+  right: 0.2rem;
+}
+
+  .SocialsIconsHero p {
+  margin-top: 0.2rem;
+}
+.SocialsIconsHero p a {
+  font-size: 1.2rem;
+}
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 480px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 27%;
+    left: 0rem;
+  }
+  .HeroSecContent .IntroNameDiv {
+    width: 97%;
+    margin: 0rem auto 0rem;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  #MyNameTop #referenceToAm::before {
+    border-radius: 0.3rem;
+    font-size: 1.23rem;
+    padding: 0.1rem 0.5rem;
+    top: 0.7rem;
+    right: 2.4rem;
+  }
+
+  #WhatDoTop {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #bothTop {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #WhatDoTopColor {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+  #PlaceTop {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+
+  /*START OF FLOATING BOXES AROUND*/
+
+  /*start of how much i love doing developing websites*/
+  .HowMuchLoveDiv {
+    top: 10%;
+    right: 0.2rem;
+  }
+  .HowMuchLoveDiv:hover {
+    scale: 1.01;
+  }
+  .HowMuchLoveDiv p {
+    padding: 0.1rem 0.3rem;
+  }
+  /*end of how much i love doing developing websites*/
+
+  /*start of how much your users will love your websites*/
+  .TheyWillLove {
+    bottom: 3%;
+    left: 0.4rem;
+  }
+  .TheyWillLove p {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.7rem;
+  }
+  .TheyWillLove:hover {
+    scale: 1.02;
+  }
+  .TheyWillLove:hover p {
+    letter-spacing: 0.1rem;
+  }
+
+  /*end of how much your users will love your websites*/
+
+  /*start of hobbies*/
+
+  .HobbiesTop {
+    bottom: 22%;
+    right: 0.4rem;
+    border-radius: 0.4rem;
+  }
+  .HobbiesTop p {
+    padding: 0.1rem 0.4rem;
+  }
+  /*END OF FLOATING BOXES AROUND*/
+}
+
+@media screen and (max-width: 439px) {
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 28%;
+    left: 0rem;
+  }
+  .HeroSecContent .IntroNameDiv {
+    width: 97%;
+    margin: 0rem auto 0rem;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 3.5rem;
+  }
+
+  #MyNameTop #referenceToAm {
+    font-size: 3.5rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    border-radius: 0.3rem;
+    font-size: 1.23rem;
+    padding: 0.1rem 0.5rem;
+    top: 0.7rem;
+    right: 2.4rem;
+  }
+
+  #WhatDoTop {
+    font-size: 2.9rem;
+  }
+  #bothTop {
+    font-size: 2.5rem;
+  }
+  #WhatDoTopColor {
+    font-size: 3.5rem;
+  }
+  #PlaceTop {
+    font-size: 2.5rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}
+
+@media screen and (max-width: 379px) {
+  /*END OF FLOATING BOXES AROUND*/
+  /*start of hobbies*/
+
+  .HobbiesTop {
+    bottom: 16%;
+  }
+  /*END OF FLOATING BOXES AROUND*/
+  /*START OF WORDS AT HEROSECTION */
+
+  .HeroSecContent {
+    top: 24%;
+    left: 0rem;
+  }
+  .HeroSecContent .IntroNameDiv {
+    width: 97%;
+    margin: 0rem auto 0rem;
+  }
+  .HeroSecContent .IntroNameDiv #MyNameTop {
+    font-size: 3.3rem;
+  }
+
+  #MyNameTop #referenceToAm {
+    font-size: 3.3rem;
+  }
+  #MyNameTop #referenceToAm::before {
+    border-radius: 0.3rem;
+    font-size: 1.23rem;
+    padding: 0.1rem 0.5rem;
+    top: 0.7rem;
+    right: 2.4rem;
+  }
+
+  #WhatDoTop {
+    font-size: 2.5rem;
+  }
+  #bothTop {
+    font-size: 2.5rem;
+  }
+  #WhatDoTopColor {
+    font-size: 3.5rem;
+  }
+  #PlaceTop {
+    font-size: 2.5rem;
+  }
+
+  /*END OF WORDS AT HEROSECTION */
+}

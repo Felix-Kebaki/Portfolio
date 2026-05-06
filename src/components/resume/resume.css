@@ -1,0 +1,173 @@
+.ResumeMainSec {
+  width: 100%;
+  background-color: var(--bg);
+  padding-bottom: 1rem;
+}
+
+.ResumeMainDiv {
+  width: 90%;
+  margin: 0rem auto 0rem;
+}
+
+.ResumeIntroTitle {
+  font-size: 6.5rem;
+  font-family: var(--titles);
+  color: var(--text-h2);
+  margin: 3rem 0rem 5rem 0rem;
+}
+
+.ResumeTextAndImgAreaDiv {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ResumeTextAndSkillsMainDiv {
+  display: flex;
+  justify-content: start;
+  column-gap: 4rem;
+}
+
+.ResumeTextMainDiv {
+  max-width: 30rem;
+}
+
+.ResumeTextMainDiv p {
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+}
+
+.ResumeTextMainDiv p:first-child {
+  color: var(--text);
+}
+
+.ResumeTextMainDiv p:last-child {
+  color: var(--text-s);
+  margin-top: 1rem;
+}
+
+.SkillsMainDiv {
+  width: 20rem;
+}
+
+.EachSkillDetailsDiv {
+  border-bottom: 0.01rem #88888744 dotted;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding: 0.8rem 0.2rem 0.6rem 0.4rem;
+}
+
+.EachSkillDetailsDiv p {
+  font-family: var(--text-font);
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.EachSkillDetailsDiv p:first-child {
+  color: var(--text-s);
+}
+.EachSkillDetailsDiv p:last-child {
+  color: var(--text);
+}
+
+.ResumeBtn {
+  background: transparent;
+  padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+  border: none;
+  border-bottom: 0.01rem var(--text-h2) solid;
+  color: var(--text-h2);
+  cursor: pointer;
+  margin: 1rem 0rem 0rem 0rem;
+  font-family: var(--titles);
+}
+
+@media screen and (max-width: 1600px) {
+  .ResumeIntroTitle {
+    font-size: 5.5rem;
+    margin: 3rem 0rem 5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 1362px) {
+  .ResumeIntroTitle {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  .ResumeIntroTitle {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .ResumeMainDiv {
+    width: 95%;
+  }
+
+  .ResumeIntroTitle {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .ResumeIntroTitle {
+    font-size: 3rem;
+  }
+
+  .ResumeTextAndSkillsMainDiv {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .ResumeTextMainDiv {
+    width: 100%;
+  }
+
+  .SkillsMainDiv {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ResumeIntroTitle {
+    font-size: 2rem;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .ResumeIntroTitle {
+    font-size: 1.6rem;
+  }
+
+  .ResumeTextMainDiv p {
+    font-size: 1rem;
+  }
+  .SkillsMainDiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .ResumeIntroTitle {
+    font-size: 1.3rem;
+  }
+
+  .ResumeBtn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
+    margin: 1.4rem 0rem 0rem 0rem;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .ResumeIntroTitle {
+    font-size: 1rem;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+}

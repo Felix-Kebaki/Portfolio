@@ -1,0 +1,230 @@
+.NavbarMainDiv {
+  width: 100%;
+}
+
+.NavigationMain {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+.InsideNavDiv {
+  width: 97%;
+  margin: 0rem auto 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+/*start of logo part*/
+
+.LogoDiv {
+  margin-top: 1rem;
+}
+.LogoDiv img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 1rem rgba(9, 11, 155, 0.075);
+  transition: 0.7s;
+}
+.LogoDiv img:hover {
+  scale: 1.1;
+}
+
+/*end of logo part*/
+
+/*start of sidenavigation*/
+
+.NavigationSide {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.CloseDiv {
+  display: none;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 0.4rem;
+  position:absolute;
+  top:0;
+  right:0.5rem;
+}
+#CloseBtn {
+  font-size: 1.8rem;
+  padding: 0.2rem 1rem;
+  color: var(--text);
+  font-family: var(--titles);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.NavigationLinkMainDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.NavigationLinkMainDiv a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  color: var(--text-h2);
+  font-weight: 800;
+  font-family: var(--titles);
+  margin: 0.2rem 0rem;
+  border-radius: 0.4rem;
+}
+
+.IconOnSubMenu {
+  display: none;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1.5rem;
+}
+.IconOnSubMenu p a {
+  color: var(--bg);
+  font-size: 1.7rem;
+}
+/*end of sidenavigation*/
+
+/*start of menu div*/
+
+.MenuDiv {
+  display: none;
+}
+#MenuBtn {
+  color: var(--text-h2);
+  font-size: 1.8rem;
+  font-family: var(--titles);
+  margin: 2rem 0rem 0rem 0rem;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}
+/*end of menu div*/
+
+@media screen and (max-width: 1480px) {
+  .NavigationSide {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    background-color: var(--bg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100dvh;
+    display: none;
+    transition: 1s;
+    overflow-y: hidden;
+  }
+
+  #CloseBtn{
+    z-index: 99;
+    padding:1rem;
+    border:0.01rem var(--bg-2) solid;
+    border-radius: 50%;
+    font-size:0.8rem;
+    color:var(--bg-2);
+  }
+
+  .NavigationSwitch {
+    display: flex;
+  }
+
+  .NavigationSwitch .NavigationLinkMainDiv{
+    height: 100%;
+    justify-content: center;
+    padding-left:0.8rem;
+  }
+
+  .NavigationLinkMainDiv a{
+    color:var(--bg-2);
+    padding:0.8rem 0.4rem;
+    z-index:99;
+    font-size:2.5rem;
+  }
+
+  .AppearingMenuLineMainDiv{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+  }
+
+  .AppearingMenuLineMainDiv div{
+    width:15%;
+  }
+
+  .AppearingMenuLineMainDiv div:nth-child(1){
+    height: 7%;
+    border-left: 0.003rem var(--text-h) solid;
+  }
+
+  .AppearingMenuLineMainDiv div:nth-child(2){
+    height: 15%;
+    border-left: 0.003rem var(--text-h) solid;
+  }
+
+  .AppearingMenuLineMainDiv div:nth-child(3){
+    height: 75%;
+    border-left: 0.003rem var(--text-h) solid;
+  }
+
+  .AppearingMenuLineMainDiv div:nth-child(4){
+    height: 50%;
+    border-left: 0.003rem var(--text-h) solid;
+  }
+
+  .AppearingMenuLineMainDiv div:nth-child(5){
+    height: 90%;
+    border-left: 0.003rem var(--text-h) solid;
+  }
+
+  .CloseDiv {
+    display: flex;
+  }
+
+  .MenuDiv {
+    display: block;
+  }
+
+  #MenuBtn {
+    margin: 1.4rem 0rem 0rem 0rem;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .LogoDiv img {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+  #MenuBtn {
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (max-width:559px){
+  .NavigationLinkMainDiv a{
+    padding:0.8rem 0.4rem;
+    font-size:2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .LogoDiv img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+    #MenuBtn {
+    font-size:1.3rem;
+  }
+}

@@ -1,0 +1,62 @@
+.TopOfSectionMainSec{
+    width:100%;
+}
+
+.SectionNumberMainDiv{
+  width:100%;
+  display: flex;
+  justify-content: end;
+}
+
+.SectionNumberMainDiv p{
+  color:#88888718;
+  font-size:12rem;
+  font-family: var(--titles);
+  letter-spacing: 0.8rem;
+}
+
+.SectionTitleMainDiv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5rem;
+}
+
+.TitleOnlyAtSec{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 0.5rem;
+}
+
+.TitleOnlyAtSec div{
+  width:0.6rem;
+  border-radius: 2rem;
+  height: 0.04rem;
+  background-color: var(--text-h2);
+}
+
+.SectionTitleMainDiv p{
+  font-size:0.65rem;
+}
+
+.SectionTitleMainDiv p{
+  color:var(--text-s);
+  text-transform: uppercase;
+  font-family: var(--text-font);
+}
+
+.SectionTitleMainDiv .TitleOnlyAtSec p{
+  color:var(--text);
+  text-transform: uppercase;
+  font-family: var(--text-font);
+}
+
+.OpeningLine{
+  width:100%;
+  margin:0.8rem auto 0rem;
+  border:0.000001rem var(--lines) dotted;
+}
+
+

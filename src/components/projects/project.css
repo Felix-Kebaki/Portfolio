@@ -1,0 +1,242 @@
+.ProjectMainSec {
+  width: 100%;
+  background-color: var(--bg);
+  padding-bottom: 1rem;
+}
+
+.ProjectMainDiv {
+  width: 90%;
+  margin: 0rem auto 0rem;
+}
+
+.AllProjectMainWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.EachProjectMainDiv {
+  width: 100%;
+  position: relative;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.ProjectImageAtBigScreens {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.EachProjectDetailsMainDiv {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(26, 0, 0, 0.678);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.TitleAndDateProjectMainDiv {
+  padding: 0rem 0.4rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.884),
+    rgba(26, 0, 0, 0.37)
+  );
+}
+
+.ProjectsDate {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+
+.ProjectDateCalendarIcon {
+  color: var(--text-h2);
+  font-size: 2rem;
+}
+
+.ProjectsDate span {
+  font-size: 0.7rem;
+  font-family: var(--text-font);
+  color: var(--bg-2);
+}
+
+.TitleAndDateProjectDiv p:last-child {
+  font-size: 2rem;
+  font-family: var(--titles);
+  color: var(--bg-2);
+}
+
+.ProjectImageAtSmallScreens {
+  display: none;
+}
+
+.DescProjectMainDiv {
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.884),
+    rgba(26, 0, 0, 0.37)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0rem 0.4rem;
+  width: 50%;
+}
+
+.DescProjectMainDiv p {
+  max-width: 18rem;
+  text-align: end;
+  color: var(--bg-2);
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1128px) {
+  .ProjectMainDiv {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .AllProjectMainWrapper {
+    row-gap: 4rem;
+    margin-top: 7rem;
+  }
+
+  .EachProjectMainDiv {
+    height: 35rem;
+    width: 100%;
+    border-radius: 0rem;
+    background-color: var(--bg);
+    position: static;
+    border-bottom: 0.01rem #88888744 dotted;
+  }
+  .EachProjectDetailsMainDiv {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 0rem;
+    width: 100%;
+    position: static;
+  }
+
+  .ProjectImageAtBigScreens {
+    display: none;
+  }
+
+  .TitleAndDateProjectMainDiv {
+    width: 100%;
+    height: auto;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.6rem;
+  }
+
+  .TitleAndDateProjectDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ProjectImageAtSmallScreens {
+    display: block;
+    width: 100%;
+    border-radius: 0.3rem;
+    position: relative;
+  }
+
+  .ProjectImageAtSmallScreens img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+  }
+
+  .ProjectImageAtSmallScreens div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .FirstDivOnProjectImg {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.884),
+      rgba(26, 0, 0, 0.37)
+    );
+  }
+
+  .SecondDivOnProjectImg {
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.884),
+      rgba(26, 0, 0, 0.37)
+    );
+  }
+
+  .DescProjectMainDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: var(--bg);
+    padding-top: 0.6rem;
+  }
+
+  .DescProjectMainDiv p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem 0.2rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .ProjectDateCalendarIcon {
+    font-size: 1.6rem;
+  }
+  .ProjectsDate span {
+    font-size: 0.6rem;
+  }
+  .TitleAndDateProjectDiv p:last-child {
+    font-size: 1.6rem;
+  }
+
+  .ProjectImageAtSmallScreens img {
+    height: 18rem;
+  }
+  .DescProjectMainDiv p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ProjectImageAtSmallScreens img {
+    height: 16rem;
+  }
+}
