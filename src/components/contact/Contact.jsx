@@ -97,7 +97,7 @@ export function Contact() {
           <div className="ContactWelcomingMsgMainDiv">
             <p>Let's Create Something Together</p>
             <p>
-              Got an idea ir project? I’m always open to meaningful
+              Got an idea or project? I’m always open to meaningful
               conversations and collaborations. Feel free to reach out—let’s
               build something impactful together.
             </p>
