@@ -41,6 +41,7 @@
   align-items: center;
   justify-content: space-between;
 }
+  /* background-color: rgba(26, 0, 0, 0.678); */
 
 .TitleAndDateProjectMainDiv {
   padding: 0rem 0.4rem;
@@ -52,10 +53,13 @@
   justify-content: center;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.884),
+    rgba(0, 0, 0, 0.685),
     rgba(26, 0, 0, 0.37)
   );
 }
+
+    /* rgba(0, 0, 0, 0.884),
+    rgba(26, 0, 0, 0.37) */
 
 .ProjectsDate {
   display: flex;
