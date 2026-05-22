@@ -1,23 +1,17 @@
 .ContactMainSec {
   width: 100%;
-  background-color: var(--bg);
-}
-
-.ContactContainerWithAnimationMainDiv {
-  width: 100%;
-  position: relative;
-  height: 82rem;
-  background-color: var(--bg);
+  height: auto;
+  padding:0rem 0rem 3rem 0rem;
+  background-image: url(../../assets/images/contactBg.png) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .ContactMainDiv {
   width: 90%;
   margin: 0rem auto 0rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  height: 100%;
 }
 
 .ContactWelcomingMsgMainDiv {
@@ -310,9 +304,7 @@
 }
 
 @media screen and (max-width: 725px) {
-  .ContactContainerWithAnimationMainDiv {
-    height: 78rem;
-  }
+
   .ContactWelcomingMsgMainDiv p:first-child {
     font-size: 2.4rem;
   }
@@ -327,9 +319,7 @@
 }
 
 @media screen and (max-width: 636px) {
-  .ContactContainerWithAnimationMainDiv {
-    height: 74rem;
-  }
+
   .ContactWelcomingMsgMainDiv p:first-child {
     font-size: 2rem;
   }
@@ -386,8 +376,3 @@
   }
 }
 
-@media screen and (max-width: 302px) {
-  .ContactContainerWithAnimationMainDiv {
-    height: 78rem;
-  }
-}

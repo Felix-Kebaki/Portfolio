@@ -1,7 +1,6 @@
 import { TopOfSections } from "../topOfSections/TopOfSections";
 import "./resume.css";
 
-
 export function Resume() {
   return (
     <section className="ResumeMainSec" id="resume">
@@ -17,28 +16,35 @@ export function Resume() {
           <div className="ResumeTextAndSkillsMainDiv">
             <div className="ResumeTextMainDiv">
               <p>
-                I build full-stack applications using React on the frontend and Node.js with Express or Spring Boot on the backend, focusing on clean code and scalable system design.
+                I build full-stack applications using React on the frontend and
+                Node.js with Express or Spring Boot on the backend, focusing on
+                clean code and scalable system design.
               </p>
               <p>
-                I emphasize usability, responsive design, and efficient backend data flow, ensuring secure integrations and reliable applications.
+                I emphasize usability, responsive design, and efficient backend
+                data flow, ensuring secure integrations and reliable
+                applications.
               </p>
             </div>
             <div className="SkillsMainDiv">
-                <div className="EachSkillDetailsDiv">
-                    <p>Languages</p>
-                    <p>Java ,JavaScript</p>
-                </div>
-                <div className="EachSkillDetailsDiv">
-                    <p>Frontend</p>
-                    <p>React.js ,Html ,CSS</p>
-                </div>
-                <div className="EachSkillDetailsDiv">
-                    <p>Backend</p>
-                    <p>SpringBoot ,Node.js ,Express.js</p>
-                </div>
-                <button className="ResumeBtn">
-                    View Resume 
-                </button>
+              <div className="EachSkillDetailsDiv">
+                <p>Languages</p>
+                <p>Java ,JavaScript</p>
+              </div>
+              <div className="EachSkillDetailsDiv">
+                <p>Frontend</p>
+                <p>React.js ,Html ,CSS</p>
+              </div>
+              <div className="EachSkillDetailsDiv">
+                <p>Backend</p>
+                <p>SpringBoot ,Node.js ,Express.js</p>
+              </div>
+              <button
+                className="ResumeBtn"
+                onClick={() => window.open(`${import.meta.env.BASE_URL}resume.pdf`, "_blank")}
+              >
+                View Resume
+              </button>
             </div>
           </div>
         </div>
