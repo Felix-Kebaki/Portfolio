@@ -60,8 +60,8 @@ export function Hero() {
             <span id="bothTop">both a</span>
           </p>
           <p id="WhatDoTop">
-            <span id="WhatDoTopColor">Software</span> and
-            <span id="WhatDoTopColor">{" "}Network</span>
+            <span id="WhatDoTopColor">Full-Stack</span> and
+            <span id="WhatDoTopColor">{" "}Software</span>
           </p>
           <p id="PlaceTop">Engineer.</p>
         </div>

@@ -29,7 +29,7 @@ export function Resume() {
             <div className="SkillsMainDiv">
               <div className="EachSkillDetailsDiv">
                 <p>Languages</p>
-                <p>Java ,JavaScript</p>
+                <p>Java ,JavaScript, Typescript, Kotlin</p>
               </div>
               <div className="EachSkillDetailsDiv">
                 <p>Frontend</p>
